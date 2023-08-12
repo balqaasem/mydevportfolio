@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { TwitterIcon, LinkedInIcon, TelegramIcon, GithubIcon, InstagramIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
 import React from 'react';
@@ -38,13 +38,6 @@ const NavBar = () => {
             whileTap={{scale:0.9}}
             className="w-6 mr-3"
             >
-                <GithubIcon />
-            </motion.a>
-            <motion.a href="/" target={"_blank"}
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className="w-6 mx-3"
-            >
                 <LinkedInIcon />
             </motion.a>
             <motion.a href="/" target={"_blank"}
@@ -64,9 +57,23 @@ const NavBar = () => {
             <motion.a href="/" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
-            className="w-6 ml-3"
+            className="w-6 mx-3"
             >
                 <InstagramIcon />
+            </motion.a>
+            <motion.a href="/" target={"_blank"}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className="w-6 mx-3"
+            >
+                <MediumIcon />
+            </motion.a>
+            <motion.a href="/" target={"_blank"}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className="w-6 ml-3"
+            >
+                <GithubIcon />
             </motion.a>
         </nav>
     
