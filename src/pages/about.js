@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import AnimatedText from '@/components/AnimatedText';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Layout from '@/components/Layout';
 import profilePic from "../../public/images/profile/khalifa-pic.jpg";
 import Image from 'next/image';
+
+const AnimatedNumbers = ({value}) => {
+const ref = useRef(null);
+
+const motionValue = useMotionValue(0);
+const springValue = useSpring(motionValue, { duration:3000 });
+const isInView = useInView(ref, {once: true});
+
+useEffect(() => {
+    if(isInView){
+        motionValue.set(value);
+    }
+}, [isInView, value, motionValue])
+
+useEffect(() => {
+  springValue.on("change", (latest) => {
+    if(ref.current && latest.toFixed(0) <= value){
+        ref.current.textContent=latest.toFixed(0);
+    }
+  })
+}, [springValue, value])
+
+    return <span ref={ref}></span>
+}
 
 const about = () => {
   return (
@@ -69,19 +94,19 @@ const about = () => {
                     <div className='col-span-2 flex flex-col items-end justify-between'>
                         <div className='flex flex-col items-end justify-between pb-6'>
                             <span className='inline-block text-7xl font-bold'>
-                                14+
+                                <AnimatedNumbers value={14} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50'>Years of Experience</h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
-                                25+
+                            <AnimatedNumbers value={25} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50'>Projects</h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
-                                9K+
+                            <AnimatedNumbers value={9200} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50'>GitHub Contributions</h2>
                         </div>
