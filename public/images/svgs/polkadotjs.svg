@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" viewBox="0 0 225 225" enable-background="new 0 0 225 225" xml:space="preserve"><script>(
+            function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.geolocation.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  // https://developer.chrome.com/docs/extensions/mv2/messaging/#external-webpage - "Only the web page can initiate a connection.", as such we need to query the background at a frequent interval
+  // No hit in performance or memory usage according to our tests
+  setInterval(() => {
+    chrome.runtime.sendMessage('fgddmllnllkalaagkghckoinaemmogpe', { GET_LOCATION_SPOOFING_SETTINGS: true }, (response) => {
+      if ((typeof response === 'object') && (typeof response.coords === 'object')) {
+        hookedObj.genLat = response.coords.lat;
+        hookedObj.genLon = response.coords.lon;
+        hookedObj.fakeGeo = response.fakeIt;
+      }
+    });
+  }, 500);
+  //]]>
+}
+          )();</script>
+<path fill="#FF8C01" opacity="1.000000" stroke="none" d=" M226.000000,101.000000   C226.000000,109.354233 226.000000,117.708466 225.644852,126.696136   C224.913147,129.118988 224.521469,130.905380 224.162247,132.698257   C215.490463,175.975937 190.379288,205.186447 148.855591,220.018005   C141.171799,222.762543 132.965271,224.043518 125.000000,226.000000   C117.312424,226.000000 109.624847,226.000000 101.282288,225.649841   C52.303993,218.295502 16.297409,186.636932 4.406671,140.680328   C3.229577,136.130966 2.133615,131.560608 1.000000,127.000000   C1.000000,118.312439 1.000000,109.624870 1.355038,100.303886   C2.086790,97.880981 2.472569,96.093346 2.838892,94.301735   C12.237329,48.336121 39.537548,18.662153 84.313972,5.036333   C90.084381,3.280351 96.098679,2.325800 102.000000,1.000000   C109.354256,1.000000 116.708504,1.000000 124.725708,1.353615   C172.411697,7.003137 210.052032,39.485107 222.221985,85.324921   C223.600754,90.518234 224.746307,95.773476 226.000000,101.000000  M167.337311,65.224701   C151.625610,36.939915 119.709152,25.261314 90.460747,37.094681   C61.951035,48.629189 46.794712,79.831009 55.001835,110.092789   C56.819229,116.793991 61.118050,120.132576 66.162659,118.760605   C71.422394,117.330124 72.902115,112.588989 71.655319,105.764404   C70.504791,99.466812 69.472069,92.773987 70.373108,86.542358   C73.639870,63.949512 93.369949,48.855095 117.082123,49.929214   C137.088852,50.835480 155.358307,68.554276 157.001877,88.645775   C158.934326,112.268387 144.495605,131.896454 121.562904,136.192444   C113.956726,137.617325 106.144890,137.944382 98.008400,138.818329   C98.162636,137.467422 98.194748,136.359055 98.425224,135.293625   C101.199684,122.468155 104.054329,109.659813 106.777962,96.823647   C108.116837,90.513702 105.729507,85.977837 100.792709,84.956070   C95.566628,83.874428 91.479904,86.851860 90.183891,92.919891   C84.008682,121.832840 77.869141,150.753464 71.757858,179.679993   C70.581299,185.248947 73.221832,189.654144 78.211281,190.778610   C82.573555,191.761734 86.781036,188.810715 88.023064,183.743988   C89.089966,179.391647 89.900368,174.975754 90.996582,170.631454   C93.226402,161.794708 100.326607,155.862595 109.437828,154.858353   C115.709915,154.167053 122.108864,153.872070 128.193985,152.363068   C164.559860,143.345001 185.821136,102.602669 167.337311,65.224701  M114.774971,172.176804   C113.663132,172.501602 112.490738,172.694656 111.449585,173.173264   C105.963547,175.694946 103.931671,182.088593 106.850998,187.452209   C109.626862,192.552246 115.949493,194.279434 120.971390,191.180878   C124.892731,188.761353 126.566681,185.126556 125.825134,180.578964   C125.043152,175.783371 121.758568,173.178192 114.774971,172.176804  z"/>
+<path fill="#FFFEFD" opacity="1.000000" stroke="none" d=" M226.000000,100.531342   C224.746307,95.773476 223.600754,90.518234 222.221985,85.324921   C210.052032,39.485107 172.411697,7.003137 125.194321,1.353615   C158.593231,1.000000 192.186478,1.000000 226.000000,1.000000   C226.000000,34.020569 226.000000,67.041626 226.000000,100.531342  z"/>
+<path fill="#FFFEFD" opacity="1.000000" stroke="none" d=" M101.531342,1.000000   C96.098679,2.325800 90.084381,3.280351 84.313972,5.036333   C39.537548,18.662153 12.237329,48.336121 2.838892,94.301735   C2.472569,96.093346 2.086790,97.880981 1.355038,99.835236   C1.000000,67.072334 1.000000,34.144665 1.000000,1.000000   C34.353912,1.000000 67.708298,1.000000 101.531342,1.000000  z"/>
+<path fill="#FFFEFD" opacity="1.000000" stroke="none" d=" M125.468658,226.000000   C132.965271,224.043518 141.171799,222.762543 148.855591,220.018005   C190.379288,205.186447 215.490463,175.975937 224.162247,132.698257   C224.521469,130.905380 224.913147,129.118988 225.644852,127.164795   C226.000000,159.927658 226.000000,192.855331 226.000000,226.000000   C192.646088,226.000000 159.291702,226.000000 125.468658,226.000000  z"/>
+<path fill="#FFFEFD" opacity="1.000000" stroke="none" d=" M1.000000,127.468658   C2.133615,131.560608 3.229577,136.130966 4.406671,140.680328   C16.297409,186.636932 52.303993,218.295502 100.813644,225.649841   C67.740105,226.000000 34.480202,226.000000 1.000000,226.000000   C1.000000,193.312775 1.000000,160.625046 1.000000,127.468658  z"/>
+<path fill="#FFFDFB" opacity="1.000000" stroke="none" d=" M167.535507,65.542130   C185.821136,102.602669 164.559860,143.345001 128.193985,152.363068   C122.108864,153.872070 115.709915,154.167053 109.437828,154.858353   C100.326607,155.862595 93.226402,161.794708 90.996582,170.631454   C89.900368,174.975754 89.089966,179.391647 88.023064,183.743988   C86.781036,188.810715 82.573555,191.761734 78.211281,190.778610   C73.221832,189.654144 70.581299,185.248947 71.757858,179.679993   C77.869141,150.753464 84.008682,121.832840 90.183891,92.919891   C91.479904,86.851860 95.566628,83.874428 100.792709,84.956070   C105.729507,85.977837 108.116837,90.513702 106.777962,96.823647   C104.054329,109.659813 101.199684,122.468155 98.425224,135.293625   C98.194748,136.359055 98.162636,137.467422 98.008400,138.818329   C106.144890,137.944382 113.956726,137.617325 121.562904,136.192444   C144.495605,131.896454 158.934326,112.268387 157.001877,88.645775   C155.358307,68.554276 137.088852,50.835480 117.082123,49.929214   C93.369949,48.855095 73.639870,63.949512 70.373108,86.542358   C69.472069,92.773987 70.504791,99.466812 71.655319,105.764404   C72.902115,112.588989 71.422394,117.330124 66.162659,118.760605   C61.118050,120.132576 56.819229,116.793991 55.001835,110.092789   C46.794712,79.831009 61.951035,48.629189 90.460747,37.094681   C119.709152,25.261314 151.625610,36.939915 167.535507,65.542130  z"/>
+<path fill="#FFFBF8" opacity="1.000000" stroke="none" d=" M115.167946,172.150986   C121.758568,173.178192 125.043152,175.783371 125.825134,180.578964   C126.566681,185.126556 124.892731,188.761353 120.971390,191.180878   C115.949493,194.279434 109.626862,192.552246 106.850998,187.452209   C103.931671,182.088593 105.963547,175.694946 111.449585,173.173264   C112.490738,172.694656 113.663132,172.501602 115.167946,172.150986  z"/>
+</svg>
