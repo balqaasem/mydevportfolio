@@ -866,7 +866,7 @@ export const InkIcon = ({ className, ...rest }) => (
             transform="matrix(.03176 0 0 .03176 53.63 51.8)"
             strokeLinecap="round"
             strokeMiterlimit={1.5}
-            serif:id="ink!_just-squid"
+            serifId="ink!_just-squid"
           >
             <g fill="#bc83fb" stroke="#000">
               <path
