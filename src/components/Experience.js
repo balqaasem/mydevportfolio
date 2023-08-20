@@ -15,15 +15,13 @@ const Details = ({position, company, time, address, work}) => {
             transition={{duration: 0.5, type: "spring"}}
             >
                 <h3 className='capitalize font-bold text-2xl'>
-                    {position}&nbsp;
+                    {position}
                 </h3>
                 <h4 className='font-bold text-primary text-xl'>@{company}</h4>
                 <span className='capitalize font-medium text-dark/75'>
                     {time} | {address}
                 </span>
-                <p className='font-medium w-full'>
-                    {work}
-                </p>
+                <p className='font-medium w-full'>{work}</p>
             </motion.div>
         </li>
     );
