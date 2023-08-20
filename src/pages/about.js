@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import profilePic from "../../public/images/profile/khalifa-pic.jpg";
 import Image from 'next/image';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
 
 const AnimatedNumbers = ({value}) => {
 const ref = useRef(null);
@@ -125,6 +126,7 @@ const about = () => {
             </div>
 
             <Skills />
+            <Experience />
             </Layout>
         </main>
     </>
