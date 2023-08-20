@@ -1,13 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {
-  ReactJsIcon, GithubIcon, FigmaIcon, HtmlIcon, CssIcon, FramerMotionIcon, WalletConnectIcon, TypescriptIcon, OpenAiIcon, TensorFlowIcon,
-  FlutterIcon, NodeJsIcon, PolkadotJsIcon, Web3JsIcon, RxJsIcon, DartIcon, RustIcon, GolangIcon, PythonIcon, SolidityIcon, LangchainIcon,
-  GraphQLIcon, WebAssemblyIcon, MySqlIcon, PostgreSqlIcon, MongoDbIcon, PrismaIcon, ReduxIcon, WebpackIcon, RedisIcon, NginxIcon,InkIcon,
-  FastApiIcon, IpfsIcon, NixIcon, DockerIcon, NextJsIcon, PyTorchIcon, AwsIcon, PrometheusIcom, PostHogIcon, KaggleIcon, HuggingFaceIcon,
-  TableauIcon, PowerBiIcon, JiraIcon, AsanaIcon, Office365Icon, SupabaseIcon, OpenZeppelinIcon, SubstrateIcon, EthereumIcon, TruffleIcon,
-  HardhatIcon, LinuxIcon, DevOpsIcon, GoogleAnalyticsIcon, TailwindCssIcon, JavascriptIcon
-} from './Icons';
 
 const Skill = ({name, x, y}) => {
   return (
@@ -30,599 +22,77 @@ const Skills = () => {
         <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
 
           <motion.div className='flex items-center justify-center rounded-full font-semibold
-          bg-dark text-light p-8 shadow-dark cursor-pointer' whileHover={{scale:1.05}}>
+          bg-dark text-light p-3 shadow-dark cursor-pointer' whileHover={{scale:1.05}}>
             STAR
           </motion.div>
           
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:70, y:55}}
-          transition={{ duration: 1.5 }}
-          >
-             <FigmaIcon />
-          </motion.div>
+          <Skill name="Management" x="23vw" y="-20.75vw"/>
+          <Skill name="Research" x="10vw" y="-20vw"/>
+          <Skill name="FullStack" x="-2vw" y="-20.75vw"/>
+          <Skill name="BackEnd"  x="-13vw" y="-20vw"/>
+          <Skill name="FrontEnd" x="-24vw" y="-20.75vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-12, y:-66}}
-          transition={{ duration: 1.5 }}
-          >
-             <HtmlIcon />
-          </motion.div>
+          <Skill name="Flutter" x="29vw" y="-15.75vw"/>
+          <Skill name="TailwindCSS" x="17.5vw" y="-15vw"/>
+          <Skill name="CSS" x="7vw" y="-15.75vw"/>
+          <Skill name="Github" x="-1vw" y="-15vw"/>
+          <Skill name="HTML" x="-10vw" y="-15.75vw"/>
+          <Skill name="ReactJS" x="-19.5vw" y="-15vw"/>
+          <Skill name="MERN" x="-29vw" y="-15vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-12, y:66}}
-          transition={{ duration: 1.5 }}
-          >
-             <CssIcon />
-          </motion.div>
+          <Skill name="EthersJS" x="36vw" y="-10vw"/>
+          <Skill name="PolkadotJS" x="20vw" y="-10.75vw"/>
+          <Skill name="JS" x="9vw" y="-10vw"/>
+          <Skill name="NodeJS" x="-4vw" y="-10vw"/>
+          <Skill name="OpenAI" x="-19vw" y="-10.75vw"/>
+          <Skill name="WalletConnect" x="-36vw" y="-10vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-65, y:-40}}
-          transition={{ duration: 1.5 }}
-          >
-             <TailwindCssIcon />
-          </motion.div>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-10, y:120}}
-          transition={{ duration: 1.5 }}
-          >
-             <FramerMotionIcon />
-          </motion.div>
+          <Skill name="HuggingFace" x="-31.5vw" y="-5vw"/>
+          <Skill name="NextJS" x="-8vw" y="-5.75vw"/>
+          <Skill name="RxJS" x="1vw" y="-5vw"/>
+          <Skill name="Rust" x="17vw" y="-5vw"/>
+          <Skill name="Ink!" x="25vw" y="-5.75vw"/>
+          <Skill name="Golang" x="33vw" y="-5vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <JavascriptIcon />
-          </motion.div>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <TypescriptIcon />
-          </motion.div>
+          <Skill name="Substrate" x="-38vw" y="0vw"/>
+          <Skill name="Truffle" x="-27vw" y="0.75vw"/>
+          <Skill name="TS" x="-8vw" y="0vw"/>
+          <Skill name="Hardhat" x="-16.3vw" y="0.75vw"/>
+          <Skill name="MySQL" x="11.5vw" y="0vw"/>
+          <Skill name="PostgreSQL" x="26vw" y="0.75vw"/>
+          <Skill name="GraphQL" x="38vw" y="0vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <ReactJsIcon />
-          </motion.div>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <NextJsIcon />
-          </motion.div>
+          <Skill name="WASM" x="-33vw" y="5vw"/>
+          <Skill name="Prisma" x="-21vw" y="5vw"/>
+          <Skill name="Redux" x="-10vw" y="5.75vw"/>
+          <Skill name="Redis" x="2vw" y="5.75vw"/>
+          <Skill name="NGiNX" x="14vw" y="5vw"/>
+          <Skill name="Linux" x="24.5vw" y="5.75vw"/>
+          <Skill name="IPFS" x="34vw" y="5vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <NodeJsIcon />
-          </motion.div>
+          <Skill name="FramerMotion" x="-35vw" y="10vw"/>
+          <Skill name="PyTorch" x="-21vw" y="10vw"/>
+          <Skill name="Python" x="-10vw" y="10vw"/>
+          <Skill name="AWS" x="11vw" y="10.75vw"/>
+          <Skill name="Solidity" x="1vw" y="10vw"/>
+          <Skill name="MongoDB" x="22vw" y="10.75vw"/>
+          <Skill name="Web3JS" x="36vw" y="10vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <PolkadotJsIcon />
-          </motion.div>
+          <Skill name="LangChain" x="-33vw" y="15vw"/>
+          <Skill name="Docker" x="-19vw" y="15vw"/>
+          <Skill name="Ganache" x="-7vw" y="15vw"/>
+          <Skill name="Webpack" x="6.5vw" y="15.75vw"/>
+          <Skill name="Dart" x="19vw" y="15.75vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <Web3JsIcon />
-          </motion.div>
+          <Skill name="AI/ML" x="-22vw" y="20vw"/>
+          <Skill name="Web3"  x="-12.3vw" y="20.75vw"/>
+          <Skill name="Cross-Platform" x="0vw" y="20.75vw"/>
+          <Skill name="iOS" x="12vw" y="20vw"/>
+          <Skill name="Android" x="22vw" y="20vw"/>
 
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <RxJsIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <FlutterIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <DartIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <RustIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <GolangIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <PythonIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <SolidityIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <InkIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <WebAssemblyIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <MySqlIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <PostgreSqlIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <GraphQLIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <MongoDbIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <PrismaIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <ReduxIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <WebpackIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <RedisIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <NginxIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <FastApiIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <IpfsIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <LinuxIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <NixIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:0, y:12}}
-          transition={{ duration: 1.5 }}
-          >
-             <DockerIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <GithubIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <DevOpsIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <AwsIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <GoogleAnalyticsIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <SupabaseIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <PrometheusIcom />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <PostHogIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <Office365Icon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <TableauIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <PowerBiIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-15}}
-          transition={{ duration: 1.5 }}
-          >
-             <JiraIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-190, y:240}}
-          transition={{ duration: 1.5 }}
-          >
-             <AsanaIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-190, y:0}}
-          transition={{ duration: 1.5 }}
-          >
-             <OpenZeppelinIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:320, y:-190}}
-          transition={{ duration: 1.5 }}
-          >
-             <SubstrateIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-450, y:-150}}
-          transition={{ duration: 1.5 }}
-          >
-             <EthereumIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-75}}
-          transition={{ duration: 1.5 }}
-          >
-             <TruffleIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-220, y:250}}
-          transition={{ duration: 1.5 }}
-          >
-             <HardhatIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-180, y:200}}
-          transition={{ duration: 1.5 }}
-          >
-             <WalletConnectIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-180, y:-160}}
-          transition={{ duration: 1.5 }}
-          >
-             <OpenAiIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-150, y:160}}
-          transition={{ duration: 1.5 }}
-          >
-             <PyTorchIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:120}}
-          transition={{ duration: 1.5 }}
-          >
-             <TensorFlowIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:40}}
-          transition={{ duration: 1.5 }}
-          >
-             <HuggingFaceIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:0}}
-          transition={{ duration: 1.5 }}
-          >
-             <KaggleIcon />
-          </motion.div>
-
-          <motion.div className='flex items-center justify-center rounded-full 
-          bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute'
-          whileHover={{scale:1.05}}
-          initial={{ x:0, y:0 }}
-          animate={{ x:-120, y:-99}}
-          transition={{ duration: 1.5 }}
-          >
-             <LangchainIcon />
-          </motion.div>
         </div>
     </>
   )
