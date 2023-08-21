@@ -105,11 +105,10 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="Crypto Screener Application"
+                            title="WikiGPT - Fullstack AI Chatbot with Open AI Embeddings"
                             img={project1}
-                            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                            local currency."
+                            summary="An Enterprise knowledge AI Chatbot built with Open AI Embeddings.
+                            Built with Python and OpenAI API."
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -117,7 +116,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Crypto Screener Application"
+                            title="Coinflix - Fullstack Crypto Price App with ReactJS"
                             img={project1}
                             link="/"
                             github="/"
@@ -126,7 +125,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Crypto Screener Application"
+                            title="Y - Fullstack Twitter/X Clone with NextJS"
                             img={project1}
                             link="/"
                             github="/"
@@ -136,11 +135,10 @@ const projects = () => {
                     
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="Crypto Screener Application"
+                            title="GoalSwap DEX - Fullstack Uniswap Clone"
                             img={project1}
-                            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                            local currency."
+                            summary="A feature-rich Crypto Decentralized Exchange.
+                            Built with Solidity, Typescript, EthersJS and ReactJS."
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -148,7 +146,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Crypto Screener Application"
+                            title="Notflix Fullstack Netflix Clone"
                             img={project1}
                             link="/"
                             github="/"
@@ -157,7 +155,56 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Crypto Screener Application"
+                            title="NFTify - Fullstack NFT Marketplace"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            type="Project"
+                        />
+                    </div>
+                    
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                            title="Setheum - Decentralised Cloud Blockchain"
+                            img={project1}
+                            summary="A Secure Confidential And Interoperable Decentralised
+                            Cloud Compute And Storage Network With A Layer-2 Infrastructure for
+                            Subchains and Smart Contracts."
+                            link="/"
+                            github="/"
+                            type="Featured Project"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="DAGESTAN - DAG + Blockchain Hybrid Consensus Mechanism"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            type="Project"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SetheumJS - JS SDK and API Library for Setheum"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            type="Project"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="DAGESTAN - DAG + Blockchain Hybrid Consensus Mechanism"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            type="Project"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="GoNotify - Golang Native Authentication System"
                             img={project1}
                             link="/"
                             github="/"
