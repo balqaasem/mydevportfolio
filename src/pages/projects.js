@@ -105,10 +105,9 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="WikiGPT - Fullstack AI Chatbot with Open AI Embeddings"
+                            title="WikiGPT - Fullstack AI Chatbot with Open AI Embeddings in Python"
                             img={project1}
-                            summary="An Enterprise knowledge AI Chatbot built with Open AI Embeddings.
-                            Built with Python and OpenAI API."
+                            summary="An Enterprise knowledge AI Chatbot built with Open AI Embeddings."
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -116,7 +115,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Coinflix - Fullstack Crypto Price App with ReactJS"
+                            title="Coinflix - Fullstack Crypto Price Tracking App"
                             img={project1}
                             link="/"
                             github="/"
@@ -125,7 +124,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Y - Fullstack Twitter/X Clone with NextJS"
+                            title="Y - Fullstack Twitter/X Clone"
                             img={project1}
                             link="/"
                             github="/"
@@ -146,7 +145,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Notflix Fullstack Netflix Clone"
+                            title="Notflix - Fullstack Netflix Clone"
                             img={project1}
                             link="/"
                             github="/"
@@ -165,11 +164,11 @@ const projects = () => {
                     
                     <div className='col-span-12'>
                         <FeaturedProject 
-                            title="Setheum - Decentralised Cloud Blockchain"
+                            title="Setheum - Decentralised Cloud Layer-1 Blockchain with Substrate"
                             img={project1}
                             summary="A Secure Confidential And Interoperable Decentralised
                             Cloud Compute And Storage Network With A Layer-2 Infrastructure for
-                            Subchains and Smart Contracts."
+                            Subchains and Smart Contracts. Built in rust with the substrate framework."
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -177,7 +176,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="DAGESTAN - DAG + Blockchain Hybrid Consensus Mechanism"
+                            title="DAGESTAN - DAG + Blockchain Hybrid Consensus Mechanism with Rust"
                             img={project1}
                             link="/"
                             github="/"
@@ -186,7 +185,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="SetheumJS - JS SDK and API Library for Setheum"
+                            title="SetheumJS - JS SDK and API Library for Setheum with RxJS in Typescript"
                             img={project1}
                             link="/"
                             github="/"
