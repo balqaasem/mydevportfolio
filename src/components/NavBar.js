@@ -33,20 +33,24 @@ const NavBar = () => {
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
-            <motion.a href="/" target={"_blank"}
+            
+            <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 mr-3"
             >
                 <LinkedInIcon />
             </motion.a>
-            <motion.a href="/" target={"_blank"}
+
+            <motion.a href="https://twitter.com/alfellati" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 mx-3"
             >
                 <TwitterIcon />
             </motion.a>
+
+            {/* 
             <motion.a href="/" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
@@ -54,28 +58,33 @@ const NavBar = () => {
             >
                 <TelegramIcon />
             </motion.a>
-            <motion.a href="/" target={"_blank"}
+            */}
+
+            <motion.a href="https://instagram.com/alfellati" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 mx-3"
             >
                 <InstagramIcon />
             </motion.a>
-            <motion.a href="/" target={"_blank"}
+
+            <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 mx-3"
             >
                 <YouTubeIcon />
             </motion.a>
-            <motion.a href="/" target={"_blank"}
+
+            <motion.a href="https://alfellati.medium.com" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 mx-3"
             >
                 <MediumIcon />
             </motion.a>
-            <motion.a href="/" target={"_blank"}
+
+            <motion.a href="https://github.com/JBA-Khalifa" target={"_blank"}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className="w-6 ml-3"
