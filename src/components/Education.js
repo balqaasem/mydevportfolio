@@ -61,7 +61,7 @@ const Education = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
                 place="Informatics Academy - JSIIT"
-                type="International Diploma in Information Technology and Communication"
+                type="International Diploma in Information Technology and Communication (IDITC)"
                 time="Apr. 2015- May 2016"
                 info="Informatics Academy, also known as Informatics Education Ltd. is a Singaporean University,
                 I graduated with International Diploma in Information Technology and Communication at the Informatics JSIIT campus in Nigeria."
