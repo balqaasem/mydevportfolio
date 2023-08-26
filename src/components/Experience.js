@@ -97,15 +97,7 @@ const Experience = () => {
                 />
                 
                 <Details 
-                position="Contributor"
-                company="Hacker Noon"
-                time="Sep. 2020 - Present"
-                address="Shenzhen, Guangdong, China - Remote"
-                work=""
-                />
-                
-                <Details 
-                position="Contributor"
+                position="Open Source Contributor"
                 company="Polkadot & Substrate"
                 time="2020 - Present"
                 address="Shenzhen, Guangdong, China - Remote"
