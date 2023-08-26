@@ -28,8 +28,9 @@ export default function Home() {
             <div className='w-1/2 flex-col items-center self-center'>
               <AnimatedText text="If You Can Imagine It, I can Build It." className=''/>
               <p className='my-4 text-base font-medium'>
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                As a skilled STAR (SDE, TPM, Architect, and Researcher), I am dedicated to building innovative applications from raw ideas. 
+                Explore my latest projects, articles and blogs, showcasing my expertise in a plethora of skills ranging from Software Architecture,
+                AI/ML development, R&D, Web3 development to Developer toolings, API & SDK development, etc..
               </p>
               <div className='flex items-center self-start mt-2'>
                 <Link href="/dummy.pdf" target={"_blank"}

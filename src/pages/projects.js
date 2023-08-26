@@ -98,9 +98,7 @@ const projects = () => {
         </Head>
         <main className='w-full mb-16 flex flex-col items-center justify-center'>
             <Layout className='pt-16'>
-                <AnimatedText text="Building Great Projects!"
-                className='mb-16'
-                />
+                <AnimatedText text="Building Great Projects!" className='mb-16'/>
 
                 <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
@@ -406,7 +404,6 @@ const projects = () => {
                             tags="GitHub, Jobs, Platform"
                         />
                     </div>
-                    
                 </div>
             </Layout>
         </main>

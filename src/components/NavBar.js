@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
 import React from 'react';
@@ -29,7 +29,7 @@ const NavBar = () => {
             <CustomLink href="/" title="Home" className='mr-4'/>
             <CustomLink href="/about" title="About" className='mx-4'/>
             <CustomLink href="/projects" title="Projects" className='mr-4'/>
-            <CustomLink href="/blog" title="Blog" className='mx-4'/>
+            <CustomLink href="/blogs" title="Blogs" className='mx-4'/>
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -60,6 +60,13 @@ const NavBar = () => {
             className="w-6 mx-3"
             >
                 <InstagramIcon />
+            </motion.a>
+            <motion.a href="/" target={"_blank"}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className="w-6 mx-3"
+            >
+                <YouTubeIcon />
             </motion.a>
             <motion.a href="/" target={"_blank"}
             whileHover={{y:-2}}
