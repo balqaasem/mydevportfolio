@@ -103,7 +103,7 @@ const about = () => {
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
-                            <AnimatedNumbers value={30} />+
+                            <AnimatedNumbers value={40} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50'>Projects</h2>
                         </div>
