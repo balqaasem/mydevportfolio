@@ -101,53 +101,95 @@ const projects = () => {
                 <AnimatedText text="Building Great Projects!" className='mb-16'/>
 
                 <div className='grid grid-cols-12 gap-24 gap-y-32'>
+
                     <div className='col-span-12'>
-                        <FeaturedProject 
-                            title="WikiGPT - Fullstack AI Chatbot with Open AI Embeddings in Python"
+
+                        <AnimatedText text="AI/ML Projects" className='mb-6 font-bold text-xl rounded-lg bg-primary text-light'/>
+
+                        <FeaturedProject
+                            title="TaskyAI - Fullstack AI Tasks SaaS Platform"
                             img={project1}
-                            summary="A private knowledge base AI Chatbot built with Open AI Embeddings."
+                            summary="An AI SaaS Platform with various types of tasks and features such as image generation, audio generation, 
+                            video generation, text summarization, chatbot assistant and code generation."
                             link="/"
                             github="/"
-                            tags="Featured, AI, Chatbot, Embeddings"
+                            tags="Featured, AI, Chatbot, SaaS"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project 
+                            title="SlackGPT - AI Slack Chatbot"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Golang, AI, Chatbot"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Coinflix - Fullstack Crypto Price Tracking App"
+                            title="RustyGPT - Fulstack AI Chatbot in Rust with Open Source LLMs"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Web3, Crypto, Price Tracking"
+                            tags="Rust, AI, Chatbot"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <FeaturedProject
+                            title="WikiStackAI  - Fullstack AI Chatbot with Open Source LLM Embeddings in Python"
+                            img={project1}
+                            summary="A private knowledge base AI Chatbot built with Open Source LLM Embeddings. 
+                            Like your own private stackoverflow or Wikipedia AI chatbot.
+                            Built with Python, stablecode Instruct, Langchain, unixcoder-base, FastAPI. 
+                            Includes a FastAPI API for developers to use it in their microservices etc."
+                            link="/"
+                            github="/"
+                            tags="Featured, AI, Chatbot, API, Embeddings"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Notflix - Fullstack Netflix Clone"
+                            title="StreamLlamaAI - Fullstack CSV Data Chatbot with Llama2 & Streamlit"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Streaming, Platform, SaaS"
+                            tags="Python, AI, Chatbot"
                         />
                     </div>
-                    
+                    <div className='col-span-6'>
+                        <Project
+                            title="DoxyAI - Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Golang, AI, Chatbot"
+                        />
+                    </div>
                     <div className='col-span-12'>
+                        <FeaturedProject
+                            title="PersonAI - Fullstack AI Persona Chatbot"
+                            img={project1}
+                            summary="A Fullstack AI Persona Chatbot with multiple avatar persona immitation."
+                            link="/"
+                            github="/"
+                            tags="Featured, AI, Chatbot, SaaS"
+                        />
+                    </div>
+
+
+
+                    <div className='col-span-12'>
+
+                        <AnimatedText text="Web3 Projects" className='mb-6 font-bold text-xl rounded-lg bg-primary text-light'/>
+
                         <FeaturedProject 
-                            title="GoalSwap DEX - Fullstack Uniswap-like DEX DApp"
+                            title="GoalSwap - Fullstack Uniswap clone DEX"
                             img={project1}
                             summary="A feature-rich Crypto Decentralized Exchange. 
                             Built with Solidity, Typescript, EthersJS and ReactJS."
                             link="/"
                             github="/"
-                            tags="Featured, Web3, Crypto, DApp"
-                        />
-                    </div>
-                    <div className='col-span-6'>
-                        <Project
-                            title="Y - Fullstack Twitter/X Clone"
-                            img={project1}
-                            link="/"
-                            github="/"
-                            tags="Chat, Social Media, Saas"
+                            tags="Featured, Web3, DeFi, DApp"
                         />
                     </div>
                     <div className='col-span-6'>
@@ -159,131 +201,51 @@ const projects = () => {
                             tags="Web3, NFTs, Marketplace"
                         />
                     </div>
-                    
-                    <div className='col-span-12'>
-                        <FeaturedProject
-                            title="MyStack AI  - Fullstack AI Chatbot with Open Source LLM Embeddings in Python"
-                            img={project1}
-                            summary="A private knowledge base AI Chatbot built with Open Source LLM Embeddings. 
-                            Built with Python, stablecode Instruct, Langchain, unixcoder-base,  FastAPI. 
-                            Includes a FastAPI API for developers to use it in their microservices etc."
-                            link="/"
-                            github="/"
-                            tags="Featured, AI, Chatbot, API, Embeddings"
-                        />
-                    </div>
-
                     <div className='col-span-6'>
                         <Project
-                            title="MyNotify - Push Notifications Server with Ntfy"
+                            title="Web3Starter - Fullstack Web3 Crowdfunding Platform DApp"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Push Notifications, Ntfy, Server"
+                            tags="Web3, Crowdfunding, DApp"
                         />
                     </div>
                     <div className='col-span-6'>
-                        <Project
-                            title="MyAPIs - Fullstack API SaaS App with Stripe Payments"
+                        <Project 
+                            title="LiquidBot - DeFi liquidation Bot for DyDx"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="API, Dashboard, SaaS"
+                            tags="DeFi, Bot, Automation"
                         />
-                    </div>
-                    
-                    <div className='col-span-12'>
-                        <FeaturedProject
-                            title="Persona AI - Fullstack AI Persona Chatbot"
-                            img={project1}
-                            summary="A Fullstack AI Persona Chatbot with multiple avatar persona immitation."
-                            link="/"
-                            github="/"
-                            tags="Featured, AI, Chatbot, SaaS"
-                        />
-                    </div>
-
+                    </div>           
                     <div className='col-span-6'>
                         <Project
-                            title="Weekdays - Fullstack CRM SaaS. Monday.com clone"
+                            title="CoinFlutter - Fullstack Flutter Crypto Prices App"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="CRM, SaaS, Server"
+                            tags="Featured, Crypto, Web3, Platform"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="SlickOSINT - An OSINT CLI Tool for investigators"
+                            title="Coinflix - Fullstack Crypto Price Tracking App"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="OSINT, Tool, CLI"
-                        />
-                    </div>
-                    
-                    <div className='col-span-12'>
-                        <FeaturedProject
-                            title="TaskAI - Fullstack AI Tasks SaaS Platform"
-                            img={project1}
-                            summary="An AI SaaS Platform with various types of tasks and features such as image generation, audio generation, 
-                            video generation, text summarization, chatbot assistant and code generation."
-                            link="/"
-                            github="/"
-                            tags="Featured, AI, Chatbot, SaaS"
-                        />
-                    </div>
-
-                    <div className='col-span-6'>
-                        <Project
-                            title="Realest - Fullstack CRUD Realestate listing platform"
-                            img={project1}
-                            link="/"
-                            github="/"
-                            tags="CRUD, Dashboard, Platform"
+                            tags="Web3, Crypto, Platform"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="MemeChat - Fullstack Realtime Chat App"
+                            title="CoinStreet - Fullstack React App for Crypto Prices, metrics and News"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Chat, Realtime, Messaging"
+                            tags="Crypto, Web3, Platform"
                         />
                     </div>
-                    
-                    <div className='col-span-12'>
-                        <FeaturedProject
-                            title="TikTak - Fullstack TikTok Clone"
-                            img={project1}
-                            summary="A fullstack TikTok Clone built fully fledged with full functions and mobile responsive. 
-                            Built with TypeScript, React, Sanity, Google Auth."
-                            link="/"
-                            github="/"
-                            tags="Featured, Chat, Social Media, Messaging"
-                        />
-                    </div>
-
-                    <div className='col-span-6'>
-                        <Project
-                            title="SlickDB - A MongoDB-like JSON Database in Golang"
-                            img={project1}
-                            link="/"
-                            github="/"
-                            tags="Database, JSON, Golang"
-                        />
-                    </div>
-                    <div className='col-span-6'>
-                        <Project
-                            title="SlickJobs - Fullstack Job Listing App in React"
-                            img={project1}
-                            link="/"
-                            github="/"
-                            tags="Listing, Dashboard, Platform"
-                        />
-                    </div>
-                    
                     <div className='col-span-12'>
                         <FeaturedProject 
                             title="Setheum - Decentralised Cloud Layer-1 Blockchain with Substrate"
@@ -314,36 +276,131 @@ const projects = () => {
                             tags="Web3, SDK, API"
                         />
                     </div>
+
+
                     
                     <div className='col-span-12'>
-                        <FeaturedProject 
-                            title="SlackGPT - AI Slack Chatbot"
+
+                        <AnimatedText text="Clone Projects" className='mb-6 font-bold text-xl rounded-lg bg-primary text-light'/>
+
+                        <FeaturedProject
+                            title="TikTak - Fullstack TikTok Clone"
                             img={project1}
-                            summary="An AI Slack Chatbot built in Golang"
+                            summary="A fullstack TikTok Clone built fully fledged with full functions and mobile responsive. 
+                            Built with TypeScript, React, Sanity, Google Auth."
                             link="/"
                             github="/"
-                            tags="Featured, AI, Slack, Chatbot"
+                            tags="Featured, Social Media, App, Clone"
+                        />
+                    </div>
+
+                    <div className='col-span-6'>
+                        <Project
+                            title="Notflix - Fullstack Netflix Clone"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Streaming, Platform, Clone"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="ReverseRobin - Loadbalancer in Golang"
+                            title="Y - Fullstack Twitter/X Clone"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Loadbalancing, Server, Algorithm"
+                            tags="Chat, Social Media, Clone"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="SSL-Flix - An SSL Certificate Tracking App"
+                            title="Weekdays - Fullstack CRM Monday CRM clone"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="SSL, Tracking, SaaS"
+                            tags="CRM, SaaS, Clone"
                         />
                     </div>
-                    
+                    <div className='col-span-6'>
+                        <Project
+                            title="Loolga - Fullstack Google Search Clone"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Search Engine, Platform, Clone"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="LinkForest - Fullstack LinkTree Clone"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="App, Website, Clone"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="Nasheedify - Fulstack Music Streaming Spotify Clone"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Music, Streaming, Platform"
+                        />
+                    </div>
+
+
+
+                    <div className='col-span-12'>
+
+                        <AnimatedText text="Other Projects" className='mb-6 font-bold text-xl rounded-lg bg-primary text-light'/>
+
+                        <FeaturedProject
+                            title="Travella - Fullstack Travel Advisor Platform"
+                            img={project1}
+                            summary="A fully-fledged Fullstack Travel Advisor App using RapidAPI and Google Maps.
+                            Has fully-fledged features like Restaurants, Hotels, Ratings, Reviews, etc."
+                            link="/"
+                            github="/"
+                            tags="Featured, Maps, Travel, Platform"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SlickDB - A MongoDB-like JSON Database in Golang"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Database, JSON, Golang"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SlickJobs - Fullstack Job Listing App in React"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Listing, Dashboard, Platform"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SlickOSINT - An OSINT CLI Tool for investigators"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="OSINT, Tool, CLI"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="MyAPIs - Fullstack API SaaS App with Stripe Payments"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="API, Dashboard, SaaS"
+                        />
+                    </div>
                     <div className='col-span-12'>
                         <FeaturedProject 
                             title="MyCommerce - Fullstack E-Commerce Platform"
@@ -357,42 +414,50 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="RustyGPT - Fulstack AI Chatbot in Rust with Open Source LLMs"
+                            title="ReverseRobin - Loadbalancer in Golang"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Rust, AI, Chatbot"
+                            tags="Loadbalancing, Server, Algorithm"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Web3Starter - Fullstack Web3 Crowdfunding Platform DApp"
+                            title="MyNotify - Push Notifications Server with Ntfy"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Web3, Crowdfunding, DApp"
+                            tags="Push Notifications, Ntfy, Server"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SSL-Flix - An SSL Certificate Tracking App"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="SSL, Tracking, SaaS"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="LindaConnect - A LinkedIn Bot to auto-accept Connection Requests"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Bot, Social Media, Automation"
                         />
                     </div>
                     
                     <div className='col-span-12'>
-                        <FeaturedProject 
-                            title="CarFlix - Fullstack Car Rental Platform"
+                        <FeaturedProject
+                            title="Realest - Fullstack CRUD Realestate listing platform"
                             img={project1}
-                            summary="A Fully-fledged Fullstack E-Commerce Car Rental Platform. 
-                            Built in Typescript, NextJS 13, ReactJS, HeadlessUI and RapidAPI. 
-                            It has full functions for dashboard and storefront, fully responsive with production level features."
+                            summary="A Fully-fledged Fullstack CRUD Realestate listing platform.
+                            You can add, edit, delete, view, and search for realestate listing with advanced features."
                             link="/"
                             github="/"
-                            tags="Featured, Rental, Dashboard, Platform"
-                        />
-                    </div>
-                    <div className='col-span-6'>
-                        <Project
-                            title="Nasheedify - Fulstack Music Streaming Spotify Clone"
-                            img={project1}
-                            link="/"
-                            github="/"
-                            tags="Music, Streaming, Platform"
+                            tags="CRUD, Dashboard, Platform"
                         />
                     </div>
                     <div className='col-span-6'>
@@ -402,6 +467,15 @@ const projects = () => {
                             link="/"
                             github="/"
                             tags="GitHub, Jobs, Platform"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="MemeChat - Fullstack Realtime Chat App"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Chat, Realtime, Messaging"
                         />
                     </div>
                 </div>
