@@ -5,13 +5,13 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className='w-full border-t-2 border-solid border-dark
-    font-medium text-lg'
+    font-medium text-lg dark:text-light dark:border-light'
     >
         <Layout className='py-8 flex items-center justify-between'>
             <span>{new Date().getFullYear} &copy; All Rights Reserved.</span>
             <Link href="https://www.linkedin.com/newsletters/decoded-with-khalifa-mba-7048092243454263296/" target={"_black"} className='underline underline-offset-2'>Newsletter</Link>
             <div>
-                Built with <span className='text-primary text-2xl px-1'>&hearts;</span>
+                Built with <span className='text-primary dark:text-primaryDark text-2xl px-1'>&hearts;</span>
                 by&nbsp;<Link href="https://linktr.ee/khalifamba" target={"_black"} className='underline underline-offset-2'>Khalifa MBA</Link>
             </div>
             <Link href="https://linktr.ee/khalifamba" target={"_black"} className='underline underline-offset-2'>LinkTree</Link>
