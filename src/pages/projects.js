@@ -233,11 +233,11 @@ const projects = () => {
                     </div>           
                     <div className='col-span-6'>
                         <Project
-                            title="CoinFlutter - Fullstack Flutter Crypto Prices App"
+                            title="CoinFlutter - Fullstack Crypto Prices Flutter App"
                             img={project1}
                             link="/"
                             github="/"
-                            tags="Featured, Crypto, Web3, Platform"
+                            tags="Featured, Crypto, Web3, Flutter/Dart"
                         />
                     </div>
                     <div className='col-span-6'>
@@ -286,6 +286,24 @@ const projects = () => {
                             link="/"
                             github="/"
                             tags="Web3, SDK, API"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SERP-STP258 - Algorithm Stablecoin Substrate Pallet"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Web3, Substrate, Stablecoin"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="Launchpad Crowdsales - Token Sale Substrate Pallet"
+                            img={project1}
+                            link="/"
+                            github="/"
+                            tags="Web3, Substrate, Crowdfunding"
                         />
                     </div>
 
@@ -408,7 +426,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="MyAPIs - Fullstack API SaaSs with Stripe Payments"
+                            title="MyAPIs - Fullstack API SaaS with Stripe Payments"
                             img={project1}
                             link="/"
                             github="/"

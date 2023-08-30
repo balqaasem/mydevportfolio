@@ -29,7 +29,9 @@ export default function Home() {
               />
             </div>
             <div className='w-1/2 flex-col items-center self-center'>
-              <AnimatedText text="If You Can Imagine It, I can Build It." className=''/>
+              <AnimatedText text="If You Can Imagine It, I can Build It." className='!text-6xl !text-left
+              xl:!text-5xl lg:!text-center lg:!text-6xl md:!5xl sm:text-3xl
+              '/>
               <p className='my-4 text-base font-medium'>
                 As a skilled STAR (SDE, TPM, Architect, and Researcher), I am dedicated to building innovative applications from raw ideas. 
                 Explore my latest projects, articles and blogs, showcasing my expertise in a plethora of skills ranging from Software Architecture,

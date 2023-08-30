@@ -3,6 +3,7 @@ import Head from 'next/head';
 import '@/styles/globals.css';
 import {Montserrat} from 'next/font/google';
 import Footer from '../components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
       <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
         <NavBar />
         <Component {...pageProps} />
+        <ScrollToTop />
         <Footer />
       </main>
     </>
