@@ -40,12 +40,12 @@ const about = () => {
             <title>Khalifa MBA | About Page</title>
             <meta name="description" content="About page of Khalifa MBA" />
         </Head>
-        <main className='flex wfull flex-col items-center justify-center'>
+        <main className='flex wfull flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
             <AnimatedText text="Behind a Shining STAR!" className='!mb-16'/>
             <div className='grid w-full grid-cols-8 gap-16'>
                 <div className='col-span-3 flex flex-col items-start justify-start'>
-                    <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+                    <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                     
                     <p className='font-medium'>
                     Salam, I'm Muhammad-Jibril Bashir Abba Al-Sharif, aka. Khalifa MBA, aka. Al-Fellati Al-Sharif, an SDE, TPM, Architect, Researcher (altogether a 'STAR') 
@@ -64,8 +64,8 @@ const about = () => {
                     </p>
                 </div>
                 <div className='col-span-3 flex flex-col items-start justify-start'>
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light'>
+                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-light' />
                             <div>
                             <Image src={profilePic} alt='Khalifa MBA' className='w-full h-auto rounded-2xl'/>
                             </div>
@@ -99,19 +99,19 @@ const about = () => {
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimatedNumbers value={14} />+
                             </span>
-                            <h2 className='text-l font-bold capitalize text-dark/50'>Years of Experience</h2>
+                            <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75'>Years of Experience</h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
                             <AnimatedNumbers value={40} />+
                             </span>
-                            <h2 className='text-l font-bold capitalize text-dark/50'>Projects</h2>
+                            <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75'>Projects</h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
                             <AnimatedNumbers value={9200} />+
                             </span>
-                            <h2 className='text-l font-bold capitalize text-dark/50'>GitHub Contributions</h2>
+                            <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75'>GitHub Contributions</h2>
                         </div>
                     </div>
                     <div>
