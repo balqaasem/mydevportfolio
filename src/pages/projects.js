@@ -6,7 +6,9 @@ import { GithubIcon } from '@/components/Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import { motion } from 'framer-motion';
 
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({tags, title, summary, img, link, github}) => {
 
@@ -19,7 +21,12 @@ const FeaturedProject = ({tags, title, summary, img, link, github}) => {
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-hidden ronded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto'/>
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
+                />
             </Link>
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -59,7 +66,12 @@ const Project = ({tags, title, img, link, github}) => {
             <Link href={link} target="_blank"
             className='w-full cursor-pointer overflow-hidden ronded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto'/>
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
+                />
             </Link>
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -127,7 +139,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="RustyGPT - Fulstack AI Chatbot in Rust with Open Source LLMs"
+                            title="RustyGPT - Fullstack Rust Chatbot with Open LLMs"
                             img={project1}
                             link="/"
                             github="/"
@@ -203,7 +215,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Web3Starter - Fullstack Web3 Crowdfunding Platform DApp"
+                            title="Web3Starter - Fullstack Web3 Crowdfunding DApp"
                             img={project1}
                             link="/"
                             github="/"
@@ -239,7 +251,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="CoinStreet - Fullstack React App for Crypto Prices, metrics and News"
+                            title="CoinStreet - Fullstack Crypto Update App"
                             img={project1}
                             link="/"
                             github="/"
@@ -342,7 +354,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="Nasheedify - Fulstack Music Streaming Spotify Clone"
+                            title="Nasheedify - Fulstack Spotify Clone"
                             img={project1}
                             link="/"
                             github="/"
@@ -396,7 +408,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="MyAPIs - Fullstack API SaaS App with Stripe Payments"
+                            title="MyAPIs - Fullstack API SaaSs with Stripe Payments"
                             img={project1}
                             link="/"
                             github="/"
@@ -425,7 +437,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="MyNotify - Push Notifications Server with Ntfy"
+                            title="MyNotify - Push Notifications Ntfy Server"
                             img={project1}
                             link="/"
                             github="/"
@@ -443,7 +455,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="LindaConnect - A LinkedIn Bot to auto-accept Connection Requests"
+                            title="LindaConnect - LinkedIn AutoConnection Bot"
                             img={project1}
                             link="/"
                             github="/"
@@ -464,7 +476,7 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="GitJobs - Fullstack Job Finding Platform with GitHub Jobs API"
+                            title="GitJobs - Fullstack GitHub Jobs API Job Finding App"
                             img={project1}
                             link="/"
                             github="/"

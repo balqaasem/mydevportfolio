@@ -23,7 +23,10 @@ export default function Home() {
         <Layout className='pt-0 flex-box'>
           <div className="flex items-center justify-between w-full">
             <div className='w-1/2'>
-              <Image src={profilePic} alt="Khalifa MBA" className='w-full h-auto hover:' />
+              <Image src={profilePic} alt="Khalifa MBA" className='w-full h-auto'
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
+              />
             </div>
             <div className='w-1/2 flex-col items-center self-center'>
               <AnimatedText text="If You Can Imagine It, I can Build It." className=''/>

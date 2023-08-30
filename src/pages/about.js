@@ -67,7 +67,10 @@ const about = () => {
                     <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light'>
                             <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-light' />
                             <div>
-                            <Image src={profilePic} alt='Khalifa MBA' className='w-full h-auto rounded-2xl'/>
+                            <Image src={profilePic} alt='Khalifa MBA' className='w-full h-auto rounded-2xl'
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 33vw"
+                            />
                             </div>
                             <div className='flex wfull flex-col items-center justify-center font-bold text-lg pt-6'>
                             <h1>Khalifa MBA</h1>
@@ -109,7 +112,7 @@ const about = () => {
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6'>
                             <span className='inline-block text-7xl font-bold'>
-                            <AnimatedNumbers value={9200} />+
+                            <AnimatedNumbers value={9300} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75'>GitHub Contributions</h2>
                         </div>

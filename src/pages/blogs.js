@@ -3,9 +3,6 @@ import Head from 'next/head'
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
-import Image from 'next/image';
-import { mediumProfile } from "../../public/images/profile/khalifa-art-2.jpg"
-import { linkedInProfile } from "../../public/images/profile/khalifa-art-3.jpg"
 import { LinkedInIcon, MediumIcon } from '@/components/Icons';
 
 const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
@@ -16,11 +13,6 @@ const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
             rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12'
         >
           <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl' />
-          {/* <Link href={visitLink} target="_blank"
-          className='w-1/2 cursor-pointer overflow-hidden ronded-lg'
-          >
-              <Image src={img} alt={title} className='w-full h-auto'/>
-          </Link> */}
 
           <div className='w-full flex flex-col items-start justify-between pl-6'>
               <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
@@ -57,11 +49,6 @@ const LinkedIn = ({img, tag, title, description, visitLink, subscribeLink}) => {
             rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-dark shadow-2xl p-12'
         >
           <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl' />
-          {/* <Link href={visitLink} target="_blank"
-          className='w-1/2 cursor-pointer overflow-hidden ronded-lg'
-          >
-              <Image src={img} alt={title} className='w-full h-auto'/>
-          </Link> */}
 
           <div className='w-full flex flex-col items-start justify-between pl-6'>
               <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
