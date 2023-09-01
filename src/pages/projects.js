@@ -6,6 +6,7 @@ import { GithubIcon } from '@/components/Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import setheumJsImage from "../../public/images/projects/setheum-js.png";
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -265,8 +266,8 @@ const projects = () => {
                             summary="A Secure Confidential And Interoperable Decentralised
                             Cloud Compute And Storage Network With A Layer-2 Infrastructure for
                             Subchains and Smart Contracts. Built in rust with the substrate framework."
-                            link="/"
-                            github="/"
+                            link="https://github.com/Setheum-Labs/Dagestan"
+                            github="https://github.com/Setheum-Labs/Setheum"
                             tags="Featured, Web3, Blockchain, Cloud"
                         />
                     </div>
@@ -274,35 +275,53 @@ const projects = () => {
                         <Project
                             title="DAGESTAN - Rust DAG-Blockchain Hybrid Consensus Mechanism"
                             img={project1}
-                            link="/"
-                            github="/"
+                            link="https://github.com/Setheum-Labs/Dagestan"
+                            github="https://github.com/Setheum-Labs/Dagestan"
                             tags="Blockchain, Consensus, Algorithm"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
                             title="SetheumJS - JS SDK and API Library for Setheum with RxJS in Typescript"
-                            img={project1}
-                            link="/"
-                            github="/"
+                            img={setheumJsImage}
+                            link="https://setheum.js.org"
+                            github="https://github.com/setheum-js/setheum.js"
                             tags="Web3, SDK, API"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                            title="SERP-STP258 - Algorithm Stablecoin Substrate Pallet"
+                            title="KhalifaSwap - DEX Pallet"
                             img={project1}
-                            link="/"
-                            github="/"
-                            tags="Web3, Substrate, Stablecoin"
+                            link="https://github.com/Khalifa-Blockchain/DEX"
+                            github="https://github.com/Khalifa-Blockchain/DEX"
+                            tags="Web3, Substrate, Pallet"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="Khalifa ECDP - Ethical-CDP Stablecoin Protocol"
+                            img={project1}
+                            link="https://github.com/Khalifa-Blockchain/ECDP"
+                            github="https://github.com/Khalifa-Blockchain/ECDP"
+                            tags="Web3, Substrate, Pallet"
+                        />
+                    </div>
+                    <div className='col-span-6'>
+                        <Project
+                            title="SERP-STP258 - Algorithmic Stablecoin Pallet"
+                            img={project1}
+                            link="https://github.com/Setheum-Labs/stp258-tokens"
+                            github="https://github.com/Setheum-Labs/stp258-tokens"
+                            tags="Web3, Substrate, Pallet"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
                             title="Launchpad Crowdsales - Token Sale Substrate Pallet"
                             img={project1}
-                            link="/"
-                            github="/"
+                            link="https://github.com/Setheum-Labs/launchpad-crowdsales"
+                            github="https://github.com/Setheum-Labs/launchpad-crowdsales"
                             tags="Web3, Substrate, Crowdfunding"
                         />
                     </div>
