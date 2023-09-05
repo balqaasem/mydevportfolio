@@ -11,6 +11,7 @@ import Education from '@/components/Education';
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimatedNumbers = ({value}) => {
 const ref = useRef(null);0
@@ -123,6 +124,7 @@ const about = () => {
             <title>Khalifa MBA | About Page</title>
             <meta name="description" content="About page of Khalifa MBA" />
         </Head>
+        <TransitionEffect />
         <main className='flex w-full flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
                 <CategoriesNav />

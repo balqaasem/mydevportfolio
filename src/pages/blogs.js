@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkedInIcon, MediumIcon } from '@/components/Icons';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
 
@@ -89,6 +90,7 @@ const blogs = () => {
             <title>Khalifa MBA | Blog Page</title>
             <meta name="description" content="Blog page of Khalifa MBA" />
         </Head>
+        <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
               <AnimatedText

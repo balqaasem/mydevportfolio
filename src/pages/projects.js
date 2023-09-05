@@ -15,6 +15,7 @@ import stp258TokensImage from "../../public/images/projects/stp258-tokens.png";
 import setheumImage from "../../public/images/projects/setheum.png";
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -153,6 +154,7 @@ const projects = () => {
             <title>Khalifa MBA | Projects Page</title>
             <meta name="description" content="Projects page of Khalifa MBA" />
         </Head>
+        <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
                 <CategoriesNav />
