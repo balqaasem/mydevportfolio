@@ -140,7 +140,7 @@ const about = () => {
                             Biography
                         </h2>
                         <p className='font-medium md:font-normal xl:text-sm'>
-                        Salam, I'm Muhammad-Jibril B.A., aka. Khalifa MBA, aka. Al-Fellati Al-Shareef, SDE, TPM, Architect, Researcher (altogether a 'STAR') 
+                        Salam, I&apos;m Muhammad-Jibril B.A., aka. Khalifa MBA, aka. Al-Fellati Al-Shareef, SDE, TPM, Architect, Researcher (altogether a &apos;STAR&apos;)
                         specializing in Web3/Blockchain, AI/ML, Cloud and Full Stack development with a passion to create intuitive, scalable and user-centric dgital products for quality experience. 
                         </p>
 
