@@ -39,9 +39,9 @@ const ScrollToTop = () => {
   return (
     <motion.div
     data-backToTopButton role="button" onClick={scrollToTop} aria-label="Back to top" title="Back to top"
-    className="fixed bottom-4 right-2 z-10 bg-primary text-dark dark:bg-primaryDark dark:text-dark
+    className="fixed bottom-4 right-2 bg-primary/90 dark:bg-primaryDark/90 backdrop-blur-md text-dark font-bold dark:text-dark
     group w-[60px] h-[60px] rounded-full flex items-center justify-center shadow-back-to-top opacity-0 invisible
-    border border-solid border-dark dark:border-light" 
+    border border-solid border-light dark:border-dark" 
     whileHover={{scale:1.05}}
     transition={{duration:0.2}}
     >

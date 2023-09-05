@@ -8,9 +8,9 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className='flex items-center justify-center mt-2'>
+    <div className='flex items-center justify-center -mt-1'>
         <Link href="/"
-        className='w-16 h-16 bg-light dark:bg-dark text-dark dark:text-light flex items-center justify-center
+        className='w-16 h-16 bg-primaryDark dark:bg-primary text-dark dark:text-dark flex items-center justify-center
         rounded-full text-sm font-bold border border-solid border-dark dark:border-light' 
         >        
         <Image src={KhalifaIcon} alt={"Khalifa MBA Icon"} className='w-full h-auto'/>

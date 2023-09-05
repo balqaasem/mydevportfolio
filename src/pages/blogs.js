@@ -10,9 +10,12 @@ const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
   return(
         <article
             className='w-full flex items-center justify-between relative rounded-br-2xl
-            rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12'
+            rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
+            lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
         >
-          <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl' />
+          <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
+            rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]
+            ' />
 
           <div className='w-full flex flex-col items-start justify-between pl-6'>
               <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
@@ -44,35 +47,38 @@ const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
 const LinkedIn = ({img, tag, title, description, visitLink, subscribeLink}) => {
 
   return(
-        <article
-            className='w-full flex items-center justify-between relative rounded-br-2xl
-            rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-dark shadow-2xl p-12'
-        >
-          <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl' />
+    <article
+        className='w-full flex items-center justify-between relative rounded-br-2xl
+        rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
+        lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
+    >
+      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
+        rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'
+      />
 
-          <div className='w-full flex flex-col items-start justify-between pl-6'>
-              <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
-              <Link
-              href={visitLink}
-              target="_blank"
-              className='hover:underline underline-offset-2'
-              >
-                <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
-              </Link>
-              <p className='my-2 font-medium text-dark dark:text-light'>{description}</p>
-              <div className='mt-2 flex items-center'>
-                <Link href={visitLink} target="_blank" className='w-10'>
-                  {" "}
-                  <LinkedInIcon />{" "}
-                </Link>
-                <Link
-                href={subscribeLink}
-                target="_blank"
-                className='ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold'
-                > Subscribe</Link>
-              </div>
+      <div className='w-full flex flex-col items-start justify-between pl-6'>
+          <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
+          <Link
+          href={visitLink}
+          target="_blank"
+          className='hover:underline underline-offset-2'
+          >
+            <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
+          </Link>
+          <p className='my-2 font-medium text-dark dark:text-light'>{description}</p>
+          <div className='mt-2 flex items-center'>
+            <Link href={visitLink} target="_blank" className='w-10'>
+              {" "}
+              <LinkedInIcon />{" "}
+            </Link>
+            <Link
+            href={subscribeLink}
+            target="_blank"
+            className='ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold'
+            > Subscribe</Link>
           </div>
-        </article>
+      </div>
+    </article>
   )
 }
 
@@ -85,9 +91,12 @@ const blogs = () => {
         </Head>
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
-              <AnimatedText text="Listen To The Words of Wisdom!" className='mb-16'/>
+              <AnimatedText
+                  text="Listen To The Words of Wisdom!"
+                  className='mb-16 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
+              />
               
-              <div className='grid grid-cols-12 gap-24 gap-y-32'>
+              <div className='w-full flex flex-col items-center justify-center gap-24 gap-y-32'>
                   <div className='col-span-12'>
                     <LinkedIn
                       // img={linkedInProfile}
