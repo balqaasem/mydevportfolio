@@ -152,7 +152,7 @@ const projects = () => {
     <>
         <Head>
             <title>Khalifa MBA | Projects Page</title>
-            <meta name="description" content="Projects page of Khalifa MBA" />
+            <meta name="description" content="Portfolio Projects of Muhammad-Jibril B.A. Al-Fellati Al-Shareef (Khalifa MBA)" />
         </Head>
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>

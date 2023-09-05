@@ -87,8 +87,8 @@ const blogs = () => {
   return (
     <>
         <Head>
-            <title>Khalifa MBA | Blog Page</title>
-            <meta name="description" content="Blog page of Khalifa MBA" />
+            <title>Khalifa MBA | Blogs Page</title>
+            <meta name="description" content="Blogs and Newsletters of Muhammad-Jibril B.A. Al-Fellati Al-Shareef (Khalifa MBA)" />
         </Head>
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
