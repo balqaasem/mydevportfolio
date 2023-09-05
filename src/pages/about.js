@@ -177,7 +177,7 @@ const about = () => {
                     <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-between pt-6 xl:items-center sm:items-center xs:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={14} />+
+                                <AnimatedNumbers value={7} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
