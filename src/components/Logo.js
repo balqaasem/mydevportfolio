@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import KhalifaIcon from '../../public/images/profile/KhalifaIcon.png'
+import khalifaIcon from '../../public/images/profile/KhalifaIcon.png'
 
 const MotionLink = motion(Link);
 
@@ -13,7 +13,7 @@ const Logo = () => {
         className='w-16 h-16 bg-primaryDark dark:bg-primary text-dark dark:text-dark flex items-center justify-center
         rounded-full text-sm font-bold border border-solid border-dark dark:border-light' 
         >        
-        <Image src={KhalifaIcon} alt={"Khalifa MBA Icon"} className='w-full h-auto'/>
+        <Image src={khalifaIcon} alt={"Khalifa MBA Icon"} className='w-full h-auto' priority/>
         100000010
         </Link>
     </div>
