@@ -284,6 +284,16 @@ const projects = () => {
                         />
                     </div>
                     <div className='col-span-12'>
+                        <Project
+                            title="Tokeneum"
+                            img={project1}
+                            summary="A Fullstack ERC20 Token Sale ICO DApp."
+                            link="/"
+                            github="/"
+                            type="ERC20 ICO DApp"
+                        />
+                    </div>
+                    <div className='col-span-12'>
                         <Project 
                             title="LiquiBot"
                             img={project1}
