@@ -220,7 +220,17 @@ const projects = () => {
                             summary="A Fullstack CSV Data Chatbot with Llama2 & Streamlit"
                             link="/"
                             github="/"
-                            type="CSV AI Chatbot"
+                            type="Llama AI Chatbot"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <Project
+                            title="YouLit AI"
+                            img={project1}
+                            summary="A Fullstack YouTube Video Summarization Chatbot with Llama2 & Streamlit"
+                            link="/"
+                            github="/"
+                            type="Llama AI Chatbot"
                         />
                     </div>
                     <div className='col-span-12'>
@@ -230,7 +240,7 @@ const projects = () => {
                             summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
                             link="/"
                             github="/"
-                            type="CSV AI Chatbot"
+                            type="FAISS AI Chatbot"
                         />
                     </div>
                     <div className='col-span-12'>
