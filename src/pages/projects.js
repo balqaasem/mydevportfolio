@@ -227,7 +227,7 @@ const projects = () => {
                         <Project
                             title="YouLit AI"
                             img={project1}
-                            summary="A Fullstack YouTube Video Summarization Chatbot with Llama2 & Streamlit"
+                            summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
                             link="/"
                             github="/"
                             type="Llama AI Chatbot"
