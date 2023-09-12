@@ -455,7 +455,7 @@ const projects = () => {
                             className='mb-6 font-bold text-xl rounded-lg border border-solid border-primary
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        <Project
+                        {/* <Project
                             title="TikTak"
                             img={project1}
                             summary="A fullstack TikTok Clone built fully fledged with full functions and mobile responsive. 
@@ -463,9 +463,9 @@ const projects = () => {
                             link="/"
                             github="/"
                             type="Social Media App Clone"
-                        />
+                        /> */}
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Notflix"
                             img={project1}
@@ -474,8 +474,8 @@ const projects = () => {
                             github="/"
                             type="Streaming App Clone"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Y"
                             img={project1}
@@ -484,7 +484,7 @@ const projects = () => {
                             github="/"
                             type="Social Media App Clone"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="Weekdays"
@@ -517,7 +517,7 @@ const projects = () => {
                             type="LinkTree App Clone"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Nasheedify"
                             img={project1}
@@ -526,7 +526,7 @@ const projects = () => {
                             github="/"
                             type="Streaming App Clone"
                         />
-                    </div>
+                    </div> */}
 
 
                     
@@ -556,7 +556,7 @@ const projects = () => {
                             type="Golang JSON Database"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="SlickJobs"
                             img={project1}
@@ -565,7 +565,7 @@ const projects = () => {
                             github="/"
                             type="Job Listing Platform"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="WHOSINT"
@@ -587,7 +587,7 @@ const projects = () => {
                             type="API SaaS App"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project 
                             title="MyCommerce"
                             img={project1}
@@ -597,7 +597,7 @@ const projects = () => {
                             github="/"
                             type="Fully-Fledged E-Commerce App"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="ReverseRobin"
@@ -639,7 +639,7 @@ const projects = () => {
                         />
                     </div>
                     
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Realest"
                             img={project1}
@@ -649,7 +649,7 @@ const projects = () => {
                             github="/"
                             type="Realestate Listing Platform"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="GitJobs"
