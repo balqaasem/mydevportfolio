@@ -99,7 +99,7 @@ const Footer = () => {
                   <MediumIcon />
               </motion.a>
 
-              <motion.a href="https://github.com/JBA-Khalifa" target={"_blank"}
+              <motion.a href="https://github.com/alfellati" target={"_blank"}
               whileHover={{y:-2}}
               whileTap={{scale:0.9}}
               className="w-6 ml-3 bg-dark text-light rounded-full border border-light"

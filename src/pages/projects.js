@@ -223,16 +223,16 @@ const projects = () => {
                             type="Llama AI Chatbot"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="YouLit AI"
                             img={project1}
                             summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
                             link="/"
-                            github="/"
+                            github="https://github.com/alfellati/yoilit-ai"
                             type="Llama AI Chatbot"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="Cesva AI"
