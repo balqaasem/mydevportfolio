@@ -89,7 +89,7 @@ const Skills = () => {
           <Skill name="CI/CD" x="9.1vw" y="0vw"/>
 
           <Skill name="NGiNX" x="-38.5vw" y="4.7vw"/>
-          <Skill name="MySQL" x="-28vw" y="4.7vw"/>
+          <Skill name="SQL" x="-28vw" y="4.7vw"/>
           <Skill name="RxJS" x="-18vw" y="4.7vw"/>
           <Skill name="Rust" x="-9.5vw" y="4.7vw"/>
           <Skill name="IPFS" x="-1vw" y="4.7vw"/>
