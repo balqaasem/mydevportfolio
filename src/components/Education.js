@@ -66,34 +66,6 @@ const Education = () => {
                 info="Informatics Academy, also known as Informatics Education Ltd. is a Singaporean University,
                 I graduated with International Diploma in Information Technology and Communication at the Informatics JSIIT campus in Nigeria."
                 />
-                
-                <Details 
-                place="Parliament International School, Apo, Abuja"
-                type="Senior Secondary School"
-                time="Sep. 2013- Mar. 2014"
-                info=""
-                />
-                
-                <Details 
-                place="Key Science Academy, Masaka"
-                type="Senior Secondary School"
-                time="Sep. 2012 - Jul. 2013"
-                info=""
-                />
-                
-                <Details 
-                place="Rightway Kiddies Academy, Apo, Abuja"
-                type="Primary and Junior Secondary School"
-                time="Sep. 2007- Jul. 2012"
-                info=""
-                />
-                
-                <Details 
-                place="Lufaloy Schools, Kano"
-                type="Primary School"
-                time="2005 - 2007"
-                info=""
-                />
             </ul>
         </div>
     </div>
