@@ -41,7 +41,7 @@ export default function Home() {
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href="alfellati.medium.com" target={"_blank"}
                 className="flex items-center bg-yellow text-dark p-2.5 px-6 rounded-lg text-lg font-semibold
-                hover:bg-primary hover:text-light border-2 border-solid border-dark hover:border-dark
+                hover:bg-primary hover:text-dark border-2 border-solid border-dark hover:border-dark
                 dark:bg-yellow dark:text-dark hover:dark:bg-primaryDark hover:dark:text-dark hover:dark:border-light
                 md:p-2 md:px-4 md:text-base
                 "
