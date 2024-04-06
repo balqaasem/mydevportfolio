@@ -14,7 +14,7 @@ const Logo = () => {
         rounded-full text-sm font-bold border border-solid border-dark dark:border-light' 
         >        
         <Image src={khalifaIcon} alt={"Khalifa MBA Icon"} className='w-full h-auto' priority/>
-        100000010
+        {/* 100000010 */}
         </Link>
     </div>
   )
