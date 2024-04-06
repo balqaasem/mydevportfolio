@@ -51,7 +51,7 @@ const Experience = () => {
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                position="Founder, Grand Imam, Chief Researcher"
+                position="Founder, CEO"
                 company="Open Web3 Foundation"
                 time="Apr. 2021 - Present"
                 address="Shenzhen, Guangdong, China"
@@ -64,13 +64,23 @@ const Experience = () => {
                 />
                 
                 <Details 
-                position="Founder, Grand Imam, Chief Architect"
+                position="Founder, CEO"
                 company="Setheum Labs"
                 time="Nov. 2019 - Present"
                 address="Shenzhen, Guangdong, China"
                 work="
                 I am working on Setheum to build the Blockchain leading Web3.0 that solves a lot of issues and provides a lot of opportunities.
                 Leading Setheum Network's design, a cutting-edge Web3 Cloud powered by Substrate. Revolutionizing industries with smart contracts.
+                "
+                />
+                
+                <Details 
+                position="Founder, CEO"
+                company="Slixon Technologies Ltd."
+                time="Nov. 2019 - Present"
+                address="Shenzhen, Guangdong, China"
+                work="
+                Slixon Tech. Working in AI. Where Web3 Meets AI.
                 "
                 />
                 
@@ -97,32 +107,13 @@ const Experience = () => {
                 address="Shenzhen, Guangdong, China - Remote"
                 work=""
                 />
-                
-                <Details 
-                position="Open Source Contributor"
-                company="Polkadot & Substrate"
-                time="2020 - Present"
-                address="Shenzhen, Guangdong, China - Remote"
-                work=""
-                />
-                
+
                 <Details 
                 position="Member"
                 company="Internet Society"
                 time="Dec. 2018 - Present"
                 address="Shenzhen, Guangdong, China - Remote"
                 work=""
-                />
-                
-                <Details 
-                position="Founder, Grand Imam, Chief Engineer"
-                company="Slixon Technologies Ltd."
-                time="Jul. 2016 - Present"
-                address="Shenzhen, Guangdong, China"
-                work="
-                Slixon Tech. was the beginning of my career in tech. Accidentally founded Setheum.. Founding Member of Setheum Labs.
-                Now focusing on E-Commerce, Web3 Dev Services, Cloud Services Provision (especially for Setheum Cloud), Cybersecurity and AI R&D, Consumer Electronics R&D (NEW).
-                "
                 />
                 
                 <Details 
@@ -177,14 +168,6 @@ const Experience = () => {
                 />
                 
                 <Details 
-                position="Business English Teacher (Part-Time)"
-                company="APLUS Education"
-                time="Sep. 2022 - Oct. 2022 (2 mos)"
-                address="Shenzhen, Guangdong, China"
-                work="Taught Business English to a Sales team of 31-40 year old adults."
-                />
-                
-                <Details 
                 position="Product and Sales Manager"
                 company="Vogtec (H.K.) Co., Ltd."
                 time="Jul. 2022 - Aug. 2022 (2 mos)"
@@ -197,32 +180,6 @@ const Experience = () => {
                 I also analyze market trends and competitor activities to look for opportunities for product improvement or new product development.
                 Collaboration with cross-functional teams such as marketing, operations and customer service is critical to ensuring successful product launches and satisfied customers.
                 As a Product and Sales Manager, my role is to drive product success and maximize sales growth through effective product management and sales strategies."
-                />
-                
-                <Details 
-                position="English Second Language Teacher (Part-Time)"
-                company="Freelance"
-                time="Nov. 2019 - Jun. 2022 (2 yrs 8 mos)"
-                address="Weifang, Shandong, China"
-                work="Taught various `English as a Second Language` classes of various ages ranging across 6-24 year olds in various different settings and arrangements."
-                />
-                
-                <Details 
-                position="Kindergarten English Teacher (Part-Time)"
-                company="Freelance"
-                time="Sep. 2019 - Oct. 2019 (2 mos)"
-                address="Qingdao, Shandong, China"
-                work="Taught English to 3-8 year old children in four different classes."
-                />
-                
-                <Details 
-                position="Web Dev., Software Engineering and Cyber Security Student"
-                company="Self-Taught"
-                time="2009 - Present"
-                address="Abuja, Fderal Capital Territory, Nigeria"
-                work="I've been learning Software Development and Engineering, starting with web development
-                and Cyber Security from the very young age of 12 when I first came across the internet.
-                It was then that I decided to work in this field and become a billionaire to help people."
                 />
             </ul>
         </div>

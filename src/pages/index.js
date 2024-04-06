@@ -39,14 +39,14 @@ export default function Home() {
                 AI/ML development, R&D, Web3 development to Developer toolings, API & SDK development, etc..
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="/Resume-Muhammad-Jibril-B.A..pdf" target={"_blank"}
+                <Link href="alfellati.medium.com" target={"_blank"}
                 className="flex items-center bg-yellow text-dark p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-primary hover:text-light border-2 border-solid border-dark hover:border-dark
                 dark:bg-yellow dark:text-dark hover:dark:bg-primaryDark hover:dark:text-dark hover:dark:border-light
                 md:p-2 md:px-4 md:text-base
                 "
                 download={true}
-                >Resume <LinkArrow className={"w-6 ml-1"}/>
+                >Medium <LinkArrow className={"w-6 ml-1"}/>
                 </Link>
 
                 <Link href="mailto:jbashir52@gmail.com" target={"_blank"}
