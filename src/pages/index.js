@@ -21,28 +21,33 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className='flex items-center text-dark w-full main-h-screen dark:text-light'>
-        <Layout className='pt-0 md:p-16 sm:pt-8'>
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className='w-1/2 md:w-full'>
+      <Layout className='md:p-8 xs:pt-8 sm:pt-8 pt-12 md:pt-8 lg:pt-8 xl:pt-15 2xl:pt-15'>
+          <div className="flex items-center justify-between w-full lg:flex-col xs:pt-8 sm:pt-8 pt-12 md:pt-8 lg:pt-8 xl:pt-15 2xl:pt-15">
+            
+            <div className='w-[47%]'>
               <Image src={profilePic} alt="Khalifa MBA" className='w-full h-auto lg:w-full md:inline-block md:w-full'
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
               />
             </div>
+
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+              
               <AnimatedText text="If You Can Imagine It, I can Build It." className='!text-6xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!5xl sm:text-3xl
               '/>
+
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
                 As a skilled STAR (SDE, TPM, Architect, and Researcher), I am dedicated to building innovative applications from raw ideas. 
                 Explore my latest projects, articles and blogs, showcasing my expertise in a plethora of skills ranging from Software Architecture,
                 AI/ML development, R&D, Web3 development to Developer toolings, API & SDK development, etc..
               </p>
+
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href="alfellati.medium.com" target={"_blank"}
-                className="flex items-center bg-yellow text-dark p-2.5 px-6 rounded-lg text-lg font-semibold
-                hover:bg-primary hover:text-dark border-2 border-solid border-dark hover:border-dark
-                dark:bg-yellow dark:text-dark hover:dark:bg-primaryDark hover:dark:text-dark hover:dark:border-light
+                className="flex items-center bg-primary text-primaryDark p-2.5 px-6 rounded-lg text-lg font-semibold
+                hover:bg-primaryDark hover:text-primary border-2 border-solid border-primaryDark hover:border-primary
+                dark:bg-primary dark:text-primaryDark hover:dark:bg-primaryDark hover:dark:text-primary dark:border-primaryDark hover:dark:border-primary
                 md:p-2 md:px-4 md:text-base
                 "
                 download={true}
