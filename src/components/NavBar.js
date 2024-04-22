@@ -13,7 +13,7 @@ const CustomLink = ({href, title, className=""}) => {
             {title}
 
             <span className={`
-            h-1 rounded-md inline-block bg-dark absolute left-0 -bottom-0.5
+            h-1 rounded-md inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full h1 rounded-md' : 'w-0'}
             `}
@@ -36,7 +36,7 @@ const CustomMobileLink = ({href, title, className="", toggle}) => {
             {title}
 
             <span className={`
-            h-1 rounded-md inline-block bg-dark absolute left-0 -bottom-0.5
+            h-1 rounded-md inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full h1 rounded-md' : 'w-0'}
             `}
@@ -76,6 +76,12 @@ const NavBar = () => {
                 <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </buton>
             <div className='w-full flex justify-between items-center lg:hidden'>
+                
+                {/* A space hack to put the logo where it is supposed to be */}
+                <nav className="flex 2xl:pb-3 xl:pb-3 justify-center">
+                    {/* <Logo /> */}
+                </nav>
+
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 '/>
                     <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
