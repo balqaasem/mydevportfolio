@@ -173,8 +173,8 @@ const projects = () => {
                         <Project
                             title="Tasky AI"
                             img={project1}
-                            summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, audio generation, 
-                            video generation, text summarization, chatbot assistant and code generation."
+                            summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
+                            audio generation, video generation, text summarization, chatbot assistant and code generation."
                             link="/"
                             github="/"
                             type="AI Chatbot SaaS"
@@ -217,9 +217,9 @@ const projects = () => {
                         <Project
                             title="LlamaLit AI"
                             img={project1}
-                            summary="A Fullstack CSV Data Chatbot with Llama2 & Streamlit"
-                            link="/"
-                            github="/"
+                            summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
+                            link="https://github.com/alfellati/llamalit-ai"
+                            github="https://github.com/alfellati/llamalit-ai"
                             type="Llama AI Chatbot"
                         />
                     </div>
@@ -238,8 +238,8 @@ const projects = () => {
                             title="Cesva AI"
                             img={project1}
                             summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
-                            link="/"
-                            github="/"
+                            link="https://github.com/alfellati/cesva-ai"
+                            github="https://github.com/alfellati/cesva-ai"
                             type="FAISS AI Chatbot"
                         />
                     </div>
