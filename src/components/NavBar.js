@@ -58,105 +58,106 @@ const NavBar = () => {
 
   return (
     <header
-    className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-dark relative'
+    className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative'
     >
         <div className='
-        w-[95%] h-[10.5%] flex justify-between items-center fixed top-10 left-1/2 -translate-x-1/2 -translate-y-1/2
-        bg-primary/90 dark:bg-primaryDark/75 rounded-lg backdrop-blur-sm px-8 py-8 z-30
+        w-[95%] h-[10.5%] mt-10 sm:mt-5 lg:mt-7 2xl:mt-8 sm:h-[7.5%] lg:h-[8.5%] md:h-[8%] 2xl:h-[8%] 
+        flex justify-between items-center fixed top-10 left-1/2 -translate-x-1/2 -translate-y-1/2
+        bg-primary/40 dark:bg-primaryDark/40 rounded-lg backdrop-blur-sm px-8 py-8 z-30
         '>
-            
-        <buton className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
-            <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-            <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
-            <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
-        </buton>
-        <div className='w-full flex justify-between items-center lg:hidden'>
-            <nav>
-                <CustomLink href="/" title="Home" className='mr-4'/>
-                <CustomLink href="/about" title="About" className='mx-4'/>
-                <CustomLink href="/projects" title="Projects" className='mr-4'/>
-                <CustomLink href="/blogs" title="Blogs" className='mx-4'/>
+           
+            <nav className="flex pb-4 2xl:pb-3 xl:pb-3 justify-center">
+                    <Logo />
             </nav>
+ 
+            <buton className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
+                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
+                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+            </buton>
+            <div className='w-full flex justify-between items-center lg:hidden'>
+                <nav>
+                    <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 text-primaryDark dark:text-primary'/>
+                    <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
+                    <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
+                    <CustomLink href="/blogs" title="Blogs" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
+                </nav>
 
-            <nav className="flex items-center justify-center flex-wrap">
+                <nav className="flex items-center justify-center flex-wrap">
+                    
+                    <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mr-3"
+                    >
+                        <LinkedInIcon />
+                    </motion.a>
+
+                    <motion.a href="https://twitter.com/alfellati" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3 bg-dark rounded-md"
+                    >
+                        <TwitterIcon />
+                    </motion.a>
+
+                    
+                    <motion.a href="https://t.me/alfellati" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <TelegramIcon />
+                    </motion.a>
                 
-                <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mr-3"
-                >
-                    <LinkedInIcon />
-                </motion.a>
 
-                <motion.a href="https://twitter.com/alfellati" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3 bg-dark rounded-md"
-                >
-                    <TwitterIcon />
-                </motion.a>
+                    <motion.a href="https://instagram.com/alfellati" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <InstagramIcon />
+                    </motion.a>
 
-                {/* 
-                <motion.a href="/" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3"
-                >
-                    <TelegramIcon />
-                </motion.a>
-                */}
+                    <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3 mr-6"
+                    >
+                        <YouTubeIcon />
+                    </motion.a>
 
-                <motion.a href="https://instagram.com/alfellati" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3"
-                >
-                    <InstagramIcon />
-                </motion.a>
+                    <motion.a href="https://alfellati.medium.com" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <MediumIcon />
+                    </motion.a>
 
-                <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3 mr-6"
-                >
-                    <YouTubeIcon />
-                </motion.a>
+                    <motion.a href="https://github.com/alfellati" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 ml-3 bg-dark text-light rounded-full"
+                    >
+                        <GithubIcon />
+                    </motion.a>
 
-                <motion.a href="https://alfellati.medium.com" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3"
-                >
-                    <MediumIcon />
-                </motion.a>
-
-                <motion.a href="https://github.com/alfellati" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 ml-3 bg-dark text-light rounded-full"
-                >
-                    <GithubIcon />
-                </motion.a>
-
-                <button
-                onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                className={`ml-3 flex items-center justify-center rounded-full p-1
-                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
-                `}
-                >
-                    {
-                    mode === 'dark'?
-                    <SunIcon className={"fill-dark"}/>
-                    : <MoonIcon className={"fill-dark"}/>
-                    }
-                </button>
-            </nav>
+                    <button
+                    onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
+                    className={`ml-3 flex items-center justify-center rounded-full p-1
+                    ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                    `}
+                    >
+                        {
+                        mode === 'dark'?
+                        <SunIcon className={"fill-dark"}/>
+                        : <MoonIcon className={"fill-dark"}/>
+                        }
+                    </button>
+                </nav>
+            </div>
         </div>
-        
-    <div className='absolute left-[50%] top-2 items-center'>
-        <Logo />
-    </div>
-    </div>
 
         {
             isOpen ?
@@ -165,13 +166,13 @@ const NavBar = () => {
             initial={ {scale:0, opacity:0, x: "-50%", y:"-50%"} }
             animate={ {scale:1, opacity:1}}
             className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-            bg-primary/90 dark:bg-primaryDark/75 rounded-lg backdrop-blur-md py-32
+            bg-primary/40 dark:bg-primaryDark/40 rounded-lg backdrop-blur-md py-32
             '>
                 <nav className='flex items-center flex-col justify-center'>
-                    <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/blogs" title="Blogs" className='' toggle={handleClick} />
+                    <CustomMobileLink href="/" title="Home" className='text-primaryDark dark:text-primary' toggle={handleClick} />
+                    <CustomMobileLink href="/about" title="About" className='text-primaryDark dark:text-primary' toggle={handleClick} />
+                    <CustomMobileLink href="/projects" title="Projects" className='text-primaryDark dark:text-primary' toggle={handleClick} />
+                    <CustomMobileLink href="/blogs" title="Blogs" className='text-primaryDark dark:text-primary' toggle={handleClick} />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wra mt-2">
@@ -192,15 +193,15 @@ const NavBar = () => {
                         <TwitterIcon />
                     </motion.a>
 
-                    {/* 
-                    <motion.a href="/" target={"_blank"}
+                    
+                    <motion.a href="https://t.me/alfellati" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
                     >
                         <TelegramIcon />
                     </motion.a>
-                    */}
+                   
 
                     <motion.a href="https://instagram.com/alfellati" target={"_blank"}
                     whileHover={{y:-2}}
