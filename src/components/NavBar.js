@@ -77,10 +77,10 @@ const NavBar = () => {
             </buton>
             <div className='w-full flex justify-between items-center lg:hidden'>
                 <nav>
-                    <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 text-primaryDark dark:text-primary'/>
-                    <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
-                    <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
-                    <CustomLink href="/blogs" title="Blogs" className='mx-6 xl:mx-3 2xl:mx-4 text-primaryDark dark:text-primary'/>
+                    <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 '/>
+                    <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
+                    <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 '/>
+                    <CustomLink href="/blogs" title="Blogs" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
@@ -169,10 +169,10 @@ const NavBar = () => {
             bg-primary/40 dark:bg-primaryDark/40 rounded-lg backdrop-blur-md py-32
             '>
                 <nav className='flex items-center flex-col justify-center'>
-                    <CustomMobileLink href="/" title="Home" className='text-primaryDark dark:text-primary' toggle={handleClick} />
-                    <CustomMobileLink href="/about" title="About" className='text-primaryDark dark:text-primary' toggle={handleClick} />
-                    <CustomMobileLink href="/projects" title="Projects" className='text-primaryDark dark:text-primary' toggle={handleClick} />
-                    <CustomMobileLink href="/blogs" title="Blogs" className='text-primaryDark dark:text-primary' toggle={handleClick} />
+                    <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
+                    <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
+                    <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
+                    <CustomMobileLink href="/blogs" title="Blogs" className='' toggle={handleClick} />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wra mt-2">
