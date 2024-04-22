@@ -8,8 +8,6 @@ import Image from 'next/image';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import setheumJsImage from "../../public/images/projects/setheum-js.png";
 import dagestanImage from "../../public/images/projects/dagestan.png";
-import ecdpImage from "../../public/images/projects/ecdp.png";
-import khalifaSwapImage from "../../public/images/projects/khalifa-dex.png";
 import launchPadCrowdsalesImage from "../../public/images/projects/launchpad-crowdsales.png";
 import stp258TokensImage from "../../public/images/projects/stp258-tokens.png";
 import setheumImage from "../../public/images/projects/setheum.png";
