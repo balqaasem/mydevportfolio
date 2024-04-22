@@ -170,7 +170,7 @@ const projects = () => {
                             className='mb-6 font-bold text-xl rounded-lg border border-solid
                             border-primary dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        <Project
+                        {/* <Project
                             title="Tasky AI"
                             img={project1}
                             summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
@@ -178,9 +178,9 @@ const projects = () => {
                             link="/"
                             github="/"
                             type="AI Chatbot SaaS"
-                        />
+                        /> */}
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project 
                             title="SlackGPT AI"
                             img={project1}
@@ -189,8 +189,8 @@ const projects = () => {
                             github="/"
                             type="Slack AI Chatbot"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="RustyGPT AI"
                             img={project1}
@@ -199,8 +199,8 @@ const projects = () => {
                             github="/"
                             type="Rust AI Chatbot"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="WikiStack AI"
                             img={project1}
@@ -212,7 +212,7 @@ const projects = () => {
                             github="/"
                             type="AI Chatbot + API"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="LlamaLit AI"
@@ -243,7 +243,7 @@ const projects = () => {
                             type="FAISS AI Chatbot"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Person AI"
                             img={project1}
@@ -252,7 +252,7 @@ const projects = () => {
                             github="/"
                             type="AI Chatbot SaaS"
                         />
-                    </div>
+                    </div> */}
 
 
 
@@ -262,7 +262,7 @@ const projects = () => {
                             className='mb-6 font-bold text-xl rounded-lg border border-solid border-primary 
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        <Project 
+                        {/* <Project 
                             title="KhalifaSwap"
                             img={project1}
                             summary="A feature-rich Crypto Decentralized Exchange. 
@@ -271,9 +271,9 @@ const projects = () => {
                             link="/"
                             github="/"
                             type="Web3 DeFi DApp"
-                        />
+                        /> */}
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="CoNFTea"
                             img={project1}
@@ -282,8 +282,8 @@ const projects = () => {
                             github="/"
                             type="Web3 NFTs Marketplace"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Web3Starter"
                             img={project1}
@@ -292,8 +292,8 @@ const projects = () => {
                             github="/"
                             type="Web3 Crowdfunding DApp"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Tokeneum"
                             img={project1}
@@ -302,8 +302,8 @@ const projects = () => {
                             github="/"
                             type="ERC20 ICO DApp"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project 
                             title="LiquiBot"
                             img={project1}
@@ -312,8 +312,8 @@ const projects = () => {
                             github="/"
                             type="DeFi Bot Automation"
                         />
-                    </div>           
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="CoinFlutter"
                             img={project1}
@@ -322,8 +322,8 @@ const projects = () => {
                             github="/"
                             type="Web3 Flutter App"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Coinflix"
                             img={project1}
@@ -332,8 +332,8 @@ const projects = () => {
                             github="/"
                             type="Crypto Prices App"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="CoinStreet"
                             img={project1}
@@ -342,7 +342,7 @@ const projects = () => {
                             github="/"
                             type="Crypto News Platform"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project 
                             title="Setheum"
@@ -377,27 +377,6 @@ const projects = () => {
                     </div>
                     <div className='col-span-12'>
                         <Project
-                            title="KhalifaSwap"
-                            img={khalifaSwapImage}
-                            summary="A DEX (Decentralized Exchange) Pallet built in rust with Substrate"
-                            link="https://github.com/Khalifa-Blockchain/DEX"
-                            github="https://github.com/Khalifa-Blockchain/DEX"
-                            type="DEX Substrate Pallet"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="Khalifa ECDP"
-                            img={ecdpImage}
-                            summary="An ECDP (Ethical Collateralized Debt Position)
-                            Stablecoin Protocol Pallet built in rust with Substrate"
-                            link="https://github.com/Khalifa-Blockchain/ECDP"
-                            github="https://github.com/Khalifa-Blockchain/ECDP"
-                            type="Stablecoin Substrate Pallet"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
                             title="SERP STP258 Tokens"
                             img={stp258TokensImage}
                             summary="A MultiCurrency Algorithmic Stablecoin Substrate Pallet."
@@ -416,7 +395,7 @@ const projects = () => {
                             type="Substrate Crowdfunding Pallet"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="MyLightning Node"
                             img={launchPadCrowdsalesImage}
@@ -425,8 +404,8 @@ const projects = () => {
                             github="/"
                             type="Bitcoin Lightning Node"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="MyLightning PSBT"
                             img={launchPadCrowdsalesImage}
@@ -435,8 +414,8 @@ const projects = () => {
                             github="/"
                             type="Bitcoin Cold Wallet"
                         />
-                    </div>
-                    <div className='col-span-12'>
+                    </div> */}
+                    {/* <div className='col-span-12'>
                         <Project
                             title="MyLightning HTLC"
                             img={launchPadCrowdsalesImage}
@@ -445,7 +424,7 @@ const projects = () => {
                             github="/"
                             type="Bitcoin HTLC Contract"
                         />
-                    </div>
+                    </div> */}
 
 
                     
@@ -495,7 +474,7 @@ const projects = () => {
                             type="CRM SaaS Clone"
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                         <Project
                             title="Googol"
                             img={project1}
@@ -506,7 +485,7 @@ const projects = () => {
                             github="/"
                             type="Search Engine App Clone"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <Project
                             title="LinkForest"
@@ -536,7 +515,7 @@ const projects = () => {
                             className='mb-6 skfont-bold text-xl rounded-lg border border-solid border-primary 
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        <Project
+                        {/* <Project
                             title="Travella"
                             img={project1}
                             summary="A fully-fledged Fullstack Travel Advisor App using RapidAPI and Google Maps.
@@ -544,17 +523,17 @@ const projects = () => {
                             link="/"
                               github="/"
                             type="Travel Advisor App"
-                        />
+                        /> */}
                     </div>
                     <div className='col-span-12'>
-                        <Project
+                        {/* <Project
                             title="SlickDB"
                             img={project1}
                             summary="A MongoDB-like JSON Database built with Golang"
                             link="/"
                             github="/"
                             type="Golang JSON Database"
-                        />
+                        /> */}
                     </div>
                     {/* <div className='col-span-12'>
                         <Project
@@ -575,16 +554,6 @@ const projects = () => {
                             link="/"
                             github="/"
                             type="OSINT CLI Tool"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="MyAPIs"
-                            img={project1}
-                            summary="A Fullstack API SaaS App that allows you to sell your APIs with Stripe Payments Integration."
-                            link="/"
-                            github="/"
-                            type="API SaaS App"
                         />
                     </div>
                     {/* <div className='col-span-12'>
