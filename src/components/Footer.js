@@ -37,6 +37,10 @@ const Footer = () => {
     >
       <div className='bg-primary dark:bg-primaryDark px-8 py-8 lg:py-2'>
         <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6'>
+          <nav className="flex 2xl:pb-3 xl:pb-3 justify-center">
+            <Logo />
+          </nav>
+
           <div className='lg:pb-4'>
             <nav>
               <CustomLink href="/" title="Home" className='mr-4'/>
@@ -65,15 +69,15 @@ const Footer = () => {
                   <TwitterIcon />
               </motion.a>
 
-              {/* 
-              <motion.a href="/" target={"_blank"}
+              
+              <motion.a href="https://t.me/alfellati" target={"_blank"}
               whileHover={{y:-2}}
               whileTap={{scale:0.9}}
               className="w-6 mx-3"
               >
                   <TelegramIcon />
               </motion.a>
-              */}
+              
 
               <motion.a href="https://instagram.com/alfellati" target={"_blank"}
               whileHover={{y:-2}}
@@ -125,7 +129,7 @@ const Footer = () => {
         </Layout>
 
         <Layout className='py-4 flex items-center justify-between lg:flex-col lg:py-6'>
-          <span>{new Date().getFullYear} &copy; All Rights Reserved.</span>
+          <span>{new Date().getFullYear} &copy; 2023-Present | All Rights Reserved.</span>
             <div className='flex items-center lg:py-4'>
                 Built with <span className='text-primary dark:text-primaryDark text-2xl px-1'>&hearts;</span>
                 by&nbsp;<Link href="https://github.com/alfellati" target={"_black"} className='underline underline-offset-2 text-primary dark:text-primaryDark'>Khalifa MBA</Link>
