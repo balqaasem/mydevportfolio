@@ -124,7 +124,6 @@ const about = () => {
             <title>Khalifa MBA | About Page</title>
             <meta name="description" content="About Muhammad-Jibril B.A. Al-Fellati Al-Shareef (Khalifa MBA)" />
         </Head>
-        <TransitionEffect />
         <main className='flex w-full flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
                 <CategoriesNav />
