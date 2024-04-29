@@ -186,11 +186,11 @@ const about = () => {
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={208} />Days
+                                <AnimatedNumbers value={208} /> Days
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
-                                Longest Streak
+                                Longest Github Streak
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
