@@ -119,7 +119,7 @@ const Project = ({type, title, summary, img, link, github}) => {
             </Link>
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lgg:pt-6'>
-                <span className='text-primary dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
+                <span className='text-primaryGreenDark dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
                 <Link
                 href={link}
                 target="_blank"
@@ -162,98 +162,7 @@ const projects = () => {
                 />
 
                 <div className='w-full flex flex-col items-center justify-between gap-24 gap-y-32'>
-                    <div className='col-span-12'  id='ai'>
-                        <AnimatedText
-                            text="AI/ML Projects"
-                            className='mb-6 font-bold text-xl rounded-lg border border-solid
-                            border-primary dark:border-primaryDark text-dark dark:text-primaryDark'
-                        />
-                        {/* <Project
-                            title="Tasky AI"
-                            img={project1}
-                            summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
-                            audio generation, video generation, text summarization, chatbot assistant and code generation."
-                            link="/"
-                            github="/"
-                            type="AI Chatbot SaaS"
-                        /> */}
-                    </div>
-                    {/* <div className='col-span-12'>
-                        <Project 
-                            title="SlackGPT AI"
-                            img={project1}
-                            summary="An AI Slack Chatbot built in Golang with LLMs"
-                            link="/"
-                            github="/"
-                            type="Slack AI Chatbot"
-                        />
-                    </div> */}
-                    {/* <div className='col-span-12'>
-                        <Project
-                            title="RustyGPT AI"
-                            img={project1}
-                            summary="A Fullstack Rust Chatbot built with Open Source LLMs"
-                            link="/"
-                            github="/"
-                            type="Rust AI Chatbot"
-                        />
-                    </div> */}
-                    {/* <div className='col-span-12'>
-                        <Project
-                            title="WikiStack AI"
-                            img={project1}
-                            summary="A private knowledge base AI Chatbot built with Open Source LLM Embeddings. 
-                            Like your own private stackoverflow or Wikipedia AI chatbot.
-                            Built with Python, stablecode Instruct, Langchain, unixcoder-base, FastAPI. 
-                            Includes a FastAPI API for developers to use it in their microservices etc."
-                            link="/"
-                            github="/"
-                            type="AI Chatbot + API"
-                        />
-                    </div> */}
-                    <div className='col-span-12'>
-                        <Project
-                            title="LlamaLit AI"
-                            img={project1}
-                            summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
-                            link="https://github.com/alfellati/llamalit-ai"
-                            github="https://github.com/alfellati/llamalit-ai"
-                            type="Llama AI Chatbot"
-                        />
-                    </div>
-                    {/* <div className='col-span-12'>
-                        <Project
-                            title="YouLit AI"
-                            img={project1}
-                            summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
-                            link="/"
-                            github="https://github.com/alfellati/yoilit-ai"
-                            type="Llama AI Chatbot"
-                        />
-                    </div> */}
-                    <div className='col-span-12'>
-                        <Project
-                            title="Cesva AI"
-                            img={project1}
-                            summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
-                            link="https://github.com/alfellati/cesva-ai"
-                            github="https://github.com/alfellati/cesva-ai"
-                            type="FAISS AI Chatbot"
-                        />
-                    </div>
-                    {/* <div className='col-span-12'>
-                        <Project
-                            title="Person AI"
-                            img={project1}
-                            summary="A Fullstack AI Persona Chatbot SaaS App that can immitate public figure personas."
-                            link="/"
-                            github="/"
-                            type="AI Chatbot SaaS"
-                        />
-                    </div> */}
-
-
-
+                    
                     <div className='col-span-12'  id='web3'>
                         <AnimatedText
                             text="Web3/Crypto Projects"
@@ -425,14 +334,107 @@ const projects = () => {
                     </div> */}
 
 
-                    
+
+                    <div className='col-span-12'  id='ai'>
+                        <AnimatedText
+                            text="AI/ML Projects"
+                            className='mb-6 font-bold text-xl rounded-lg border border-solid
+                            border-primary dark:border-primaryDark text-dark dark:text-primaryDark'
+                        />
+                        {/* <Project
+                            title="Tasky AI"
+                            img={project1}
+                            summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
+                            audio generation, video generation, text summarization, chatbot assistant and code generation."
+                            link="/"
+                            github="/"
+                            type="AI Chatbot SaaS"
+                        /> */}
+                    </div>
+                    {/* <div className='col-span-12'>
+                        <Project 
+                            title="SlackGPT AI"
+                            img={project1}
+                            summary="An AI Slack Chatbot built in Golang with LLMs"
+                            link="/"
+                            github="/"
+                            type="Slack AI Chatbot"
+                        />
+                    </div> */}
+                    {/* <div className='col-span-12'>
+                        <Project
+                            title="RustyGPT AI"
+                            img={project1}
+                            summary="A Fullstack Rust Chatbot built with Open Source LLMs"
+                            link="/"
+                            github="/"
+                            type="Rust AI Chatbot"
+                        />
+                    </div> */}
+                    {/* <div className='col-span-12'>
+                        <Project
+                            title="WikiStack AI"
+                            img={project1}
+                            summary="A private knowledge base AI Chatbot built with Open Source LLM Embeddings. 
+                            Like your own private stackoverflow or Wikipedia AI chatbot.
+                            Built with Python, stablecode Instruct, Langchain, unixcoder-base, FastAPI. 
+                            Includes a FastAPI API for developers to use it in their microservices etc."
+                            link="/"
+                            github="/"
+                            type="AI Chatbot + API"
+                        />
+                    </div> */}
+                    <div className='col-span-12'>
+                        <Project
+                            title="LlamaLit AI"
+                            img={project1}
+                            summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
+                            link="https://github.com/alfellati/llamalit-ai"
+                            github="https://github.com/alfellati/llamalit-ai"
+                            type="Llama AI Chatbot"
+                        />
+                    </div>
+                    {/* <div className='col-span-12'>
+                        <Project
+                            title="YouLit AI"
+                            img={project1}
+                            summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
+                            link="/"
+                            github="https://github.com/alfellati/yoilit-ai"
+                            type="Llama AI Chatbot"
+                        />
+                    </div> */}
+                    {/* <div className='col-span-12'>
+                        <Project
+                            title="Cesva AI"
+                            img={project1}
+                            summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
+                            link="https://github.com/alfellati/cesva-ai"
+                            github="https://github.com/alfellati/cesva-ai"
+                            type="FAISS AI Chatbot"
+                        />
+                    </div> */}
+                    {/* <div className='col-span-12'>
+                        <Project
+                            title="Person AI"
+                            img={project1}
+                            summary="A Fullstack AI Persona Chatbot SaaS App that can immitate public figure personas."
+                            link="/"
+                            github="/"
+                            type="AI Chatbot SaaS"
+                        />
+                    </div> */}
+
+
+
+                    {/*                     
                     <div className='col-span-12'  id='clones'>
                         <AnimatedText
                             text="Clone Projects"
                             className='mb-6 font-bold text-xl rounded-lg border border-solid border-primary
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        {/* <Project
+                        <Project
                             title="TikTak"
                             img={project1}
                             summary="A fullstack TikTok Clone built fully fledged with full functions and mobile responsive. 
@@ -440,9 +442,9 @@ const projects = () => {
                             link="/"
                             github="/"
                             type="Social Media App Clone"
-                        /> */}
+                        />
                     </div>
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project
                             title="Notflix"
                             img={project1}
@@ -451,8 +453,8 @@ const projects = () => {
                             github="/"
                             type="Streaming App Clone"
                         />
-                    </div> */}
-                    {/* <div className='col-span-12'>
+                    </div>
+                    <div className='col-span-12'>
                         <Project
                             title="Y"
                             img={project1}
@@ -461,7 +463,7 @@ const projects = () => {
                             github="/"
                             type="Social Media App Clone"
                         />
-                    </div> */}
+                    </div>
                     <div className='col-span-12'>
                         <Project
                             title="Weekdays"
@@ -472,7 +474,7 @@ const projects = () => {
                             type="CRM SaaS Clone"
                         />
                     </div>
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project
                             title="Googol"
                             img={project1}
@@ -483,7 +485,7 @@ const projects = () => {
                             github="/"
                             type="Search Engine App Clone"
                         />
-                    </div> */}
+                    </div>
                     <div className='col-span-12'>
                         <Project
                             title="LinkForest"
@@ -494,7 +496,7 @@ const projects = () => {
                             type="LinkTree App Clone"
                         />
                     </div>
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project
                             title="Nasheedify"
                             img={project1}
@@ -506,14 +508,14 @@ const projects = () => {
                     </div> */}
 
 
-                    
+{/*                     
                     <div className='col-span-12' id='others'>
                         <AnimatedText
                             text="Other Projects"
                             className='mb-6 skfont-bold text-xl rounded-lg border border-solid border-primary 
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        {/* <Project
+                        <Project
                             title="Travella"
                             img={project1}
                             summary="A fully-fledged Fullstack Travel Advisor App using RapidAPI and Google Maps.
@@ -521,19 +523,19 @@ const projects = () => {
                             link="/"
                               github="/"
                             type="Travel Advisor App"
-                        /> */}
+                        />
                     </div>
                     <div className='col-span-12'>
-                        {/* <Project
+                        <Project
                             title="SlickDB"
                             img={project1}
                             summary="A MongoDB-like JSON Database built with Golang"
                             link="/"
                             github="/"
                             type="Golang JSON Database"
-                        /> */}
+                        />
                     </div>
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project
                             title="SlickJobs"
                             img={project1}
@@ -542,7 +544,7 @@ const projects = () => {
                             github="/"
                             type="Job Listing Platform"
                         />
-                    </div> */}
+                    </div>
                     <div className='col-span-12'>
                         <Project
                             title="WHOSINT"
@@ -554,7 +556,7 @@ const projects = () => {
                             type="OSINT CLI Tool"
                         />
                     </div>
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project 
                             title="MyCommerce"
                             img={project1}
@@ -564,7 +566,7 @@ const projects = () => {
                             github="/"
                             type="Fully-Fledged E-Commerce App"
                         />
-                    </div> */}
+                    </div>
                     <div className='col-span-12'>
                         <Project
                             title="ReverseRobin"
@@ -606,7 +608,7 @@ const projects = () => {
                         />
                     </div>
                     
-                    {/* <div className='col-span-12'>
+                    <div className='col-span-12'>
                         <Project
                             title="Realest"
                             img={project1}
@@ -616,7 +618,7 @@ const projects = () => {
                             github="/"
                             type="Realestate Listing Platform"
                         />
-                    </div> */}
+                    </div>
                     <div className='col-span-12'>
                         <Project
                             title="GitJobs"
@@ -636,7 +638,7 @@ const projects = () => {
                             github="/"
                             type="Realtime Messaging App"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </Layout>
         </main>
