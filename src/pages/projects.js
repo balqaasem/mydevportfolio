@@ -10,7 +10,10 @@ import setheumJsImage from "../../public/images/projects/setheum-js.png";
 import dagestanImage from "../../public/images/projects/dagestan.png";
 import launchPadCrowdsalesImage from "../../public/images/projects/launchpad-crowdsales.png";
 import stp258TokensImage from "../../public/images/projects/stp258-tokens.png";
-import setheumImage from "../../public/images/projects/setheum.png";
+import setheumImage from "../../public/images/projects/setheum-image.png";
+import kamawingaImage from "../../public/images/projects/kamawinga-image.png";
+import llamalitImage from "../../public/images/projects/llamalit-image.png";
+
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import TransitionEffect from '@/components/TransitionEffect';
@@ -169,17 +172,78 @@ const projects = () => {
                             className='mb-6 font-bold text-xl rounded-lg border border-solid border-primary 
                             dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        {/* <Project 
-                            title="KhalifaSwap"
-                            img={project1}
-                            summary="A feature-rich Crypto Decentralized Exchange. 
-                            Built with Solidity, Typescript, EthersJS and ReactJS.
-                            A Fullstack Uniswap clone DEX."
-                            link="/"
-                            github="/"
-                            type="Web3 DeFi DApp"
-                        /> */}
+                        <Project 
+                            title="Kamawinga"
+                            img={kamawingaImage}
+                            summary="A fun and versatile Memecoin. If $KAMAW had wheels he'd be a bike."
+                            link="https://kamawinga.lol"
+                            github="https://github.com/kamawinga"
+                            type="Web3 Meme Coin"
+                        />
                     </div>
+                    
+                    <div className='col-span-12'>
+                        <Project 
+                            title="Setheum"
+                            img={setheumImage}
+                            summary="A Secure Confidential And Interoperable Decentralised
+                            Cloud Compute And Storage Layer-1 Network With A Layer-2 Infrastructure for
+                            Subchains and Smart Contracts. Built in rust with the substrate framework."
+                            link="https://setheum.xyz"
+                            github="https://github.com/Setheum-Labs/Setheum"
+                            type="Substrate Blockchain Network"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <Project
+                            title="SetheumJS"
+                            img={setheumJsImage}
+                            summary="An RxJS SDK and API Library for the Setheum Blockchain built with Typescript and PolkadotJS"
+                            link="https://setheum.js.org"
+                            github="https://github.com/setheum-js/setheum.js"
+                            type="PolkadotJS SDK Library"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <Project
+                            title="DAGESTAN"
+                            img={dagestanImage}
+                            summary="A DAG-Blockchain Hybrid Consensus Mechanism built in rust with Substrate."
+                            link="https://github.com/Setheum-Labs/Dagestan"
+                            github="https://github.com/Setheum-Labs/Dagestan"
+                            type="Blockchain Consensus Algorithm"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <Project
+                            title="HighEnd LaunchPad (HELP)"
+                            img={launchPadCrowdsalesImage}
+                            summary="A Token Launchpad Crowdsales Substrate Pallet."
+                            link="https://github.com/Setheum-Labs/launchpad-crowdsales"
+                            github="https://github.com/Setheum-Labs/launchpad-crowdsales"
+                            type="Substrate Crowdfunding Pallet"
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <Project
+                            title="SERP STP258 Tokens"
+                            img={stp258TokensImage}
+                            summary="A MultiCurrency Algorithmic Stablecoin Substrate Pallet."
+                            link="https://github.com/Setheum-Labs/stp258-tokens"
+                            github="https://github.com/Setheum-Labs/stp258-tokens"
+                            type="Stablecoin Substrate Pallet"
+                        />
+                    </div>
+                    {/* <Project 
+                        title="KhalifaSwap"
+                        img={project1}
+                        summary="A feature-rich Crypto Decentralized Exchange. 
+                        Built with Solidity, Typescript, EthersJS and ReactJS.
+                        A Fullstack Uniswap clone DEX."
+                        link="/"
+                        github="/"
+                        type="Web3 DeFi DApp"
+                    /> */}
                     {/* <div className='col-span-12'>
                         <Project
                             title="CoNFTea"
@@ -250,58 +314,6 @@ const projects = () => {
                             type="Crypto News Platform"
                         />
                     </div> */}
-                    <div className='col-span-12'>
-                        <Project 
-                            title="Setheum"
-                            img={setheumImage}
-                            summary="A Secure Confidential And Interoperable Decentralised
-                            Cloud Compute And Storage Layer-1 Network With A Layer-2 Infrastructure for
-                            Subchains and Smart Contracts. Built in rust with the substrate framework."
-                            link="https://github.com/Setheum-Labs/Setheum"
-                            github="https://github.com/Setheum-Labs/Setheum"
-                            type="Substrate Blockchain Network"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="DAGESTAN"
-                            img={dagestanImage}
-                            summary="A DAG-Blockchain Hybrid Consensus Mechanism built in rust with Substrate."
-                            link="https://github.com/Setheum-Labs/Dagestan"
-                            github="https://github.com/Setheum-Labs/Dagestan"
-                            type="Blockchain Consensus Algorithm"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="SetheumJS"
-                            img={setheumJsImage}
-                            summary="An RxJS SDK and API Library for Setheum built with Typescript and PolkadotJS"
-                            link="https://setheum.js.org"
-                            github="https://github.com/setheum-js/setheum.js"
-                            type="PolkadotJS SDK Library"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="SERP STP258 Tokens"
-                            img={stp258TokensImage}
-                            summary="A MultiCurrency Algorithmic Stablecoin Substrate Pallet."
-                            link="https://github.com/Setheum-Labs/stp258-tokens"
-                            github="https://github.com/Setheum-Labs/stp258-tokens"
-                            type="Stablecoin Substrate Pallet"
-                        />
-                    </div>
-                    <div className='col-span-12'>
-                        <Project
-                            title="HighEnd LaunchPad (HELP)"
-                            img={launchPadCrowdsalesImage}
-                            summary="A Token Launchpad Crowdsales Substrate Pallet."
-                            link="https://github.com/Setheum-Labs/launchpad-crowdsales"
-                            github="https://github.com/Setheum-Labs/launchpad-crowdsales"
-                            type="Substrate Crowdfunding Pallet"
-                        />
-                    </div>
                     {/* <div className='col-span-12'>
                         <Project
                             title="MyLightning Node"
@@ -341,16 +353,26 @@ const projects = () => {
                             className='mb-6 font-bold text-xl rounded-lg border border-solid
                             border-primary dark:border-primaryDark text-dark dark:text-primaryDark'
                         />
-                        {/* <Project
-                            title="Tasky AI"
-                            img={project1}
-                            summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
-                            audio generation, video generation, text summarization, chatbot assistant and code generation."
-                            link="/"
-                            github="/"
-                            type="AI Chatbot SaaS"
-                        /> */}
+                        <div className='col-span-12'>
+                            <Project
+                                title="LlamaLit AI"
+                                img={llamalitImage}
+                                summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
+                                link="https://github.com/alfellati/llamalit-ai"
+                                github="https://github.com/alfellati/llamalit-ai"
+                                type="Llama AI Chatbot"
+                            />
+                        </div>
                     </div>
+                    {/* <Project
+                        title="Tasky AI"
+                        img={project1}
+                        summary="A Fullstack AI SaaS Platform with various types of tasks and features such as image generation, 
+                        audio generation, video generation, text summarization, chatbot assistant and code generation."
+                        link="/"
+                        github="/"
+                        type="AI Chatbot SaaS"
+                    /> */}
                     {/* <div className='col-span-12'>
                         <Project 
                             title="SlackGPT AI"
@@ -384,16 +406,6 @@ const projects = () => {
                             type="AI Chatbot + API"
                         />
                     </div> */}
-                    <div className='col-span-12'>
-                        <Project
-                            title="LlamaLit AI"
-                            img={project1}
-                            summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
-                            link="https://github.com/alfellati/llamalit-ai"
-                            github="https://github.com/alfellati/llamalit-ai"
-                            type="Llama AI Chatbot"
-                        />
-                    </div>
                     {/* <div className='col-span-12'>
                         <Project
                             title="YouLit AI"
