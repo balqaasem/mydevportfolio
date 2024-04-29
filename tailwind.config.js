@@ -21,6 +21,7 @@ module.exports = {
         light: "#e4f4f4", // Khalifa Light
         primary: "#45f383", // 27,243,258 - Khalifa Green
         primaryTurquoise: "#51ffe4", // 80,230,217 - Khalifa Turquoise
+        primaryGreenDark: "#09C64F", // Khalifa Green Dark
         primaryDark: "#843FC5", // Khalifa Purple
         yellow: "#FFE55E", // 255, 223, 56 - Khalifa Yellow
       },

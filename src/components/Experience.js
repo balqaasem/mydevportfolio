@@ -17,7 +17,7 @@ const Details = ({position, company, time, address, work}) => {
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                     {position}
                 </h3>
-                <h4 className='font-bold text-primary dark:text-primaryDark text-xl'>@{company}</h4>
+                <h4 className='font-bold text-primaryGreenDark dark:text-primaryDark text-xl'>@{company}</h4>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
                     {time} | {address}
                 </span>

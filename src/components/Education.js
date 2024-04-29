@@ -17,7 +17,7 @@ const Details = ({ type, time, place, info}) => {
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                     {place}
                 </h3>
-                <h3 className='capitalize font-bold text-primary dark:text-primaryDark text-l sm:text-lg xs:text-sm'>
+                <h3 className='capitalize font-bold text-primaryGreenDark dark:text-primaryDark text-l sm:text-lg xs:text-sm'>
                     {type}
                 </h3>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 sm:text-lg xs:text-sm'>

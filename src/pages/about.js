@@ -131,17 +131,18 @@ const about = () => {
                 <div>
                     <AnimatedText
                         text="Behind a Shining STAR!"
-                        className='!mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8'
+                        className='!mb-5 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-4'
                     />
                 </div>
                 <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                     <div id='biography' className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 text-primary dark:text-primaryDark'>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 text-primaryGreenDark dark:text-primaryDark'>
                             Biography
                         </h2>
                         <p className='font-medium md:font-normal xl:text-sm'>
-                        Salam, I&apos;m Muhammad-Jibril B.A., aka. Khalifa MBA, aka. Al-Fellati Al-Shareef, SDE, TPM, Architect, Researcher (altogether a &apos;STAR&apos;)
-                        specializing in Web3/Blockchain, AI/ML, Cloud and Full Stack development with a passion to create intuitive, scalable and user-centric dgital products for quality experience. 
+                        Salam, I&apos;m Muhammad-Jibril Bashir Al-Sharif, aka. Khalifa MBA, aka. Al-Fellati Al-Sharif, SDE, TPM, Architect, 
+                        Researcher (altogether a &apos;STAR&apos;) specializing in Web3/Blockchain, AI/ML, Cloud and Full Stack development 
+                        with a passion to create intuitive, scalable and user-centric dgital products for quality experience. 
                         </p>
 
                         <p className='mt-3 font-medium md:font-normal xl:text-sm'>
@@ -150,33 +151,32 @@ const about = () => {
                         I am always looking for new and innovative ways to bring my vision to life.
                         </p>
                     </div>
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-                    bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'
+                    
+                    <div className='col-span-3 relative h-max rounded-2xl bg-radialSunLight p-8 dark:bg-dark dark:border-light
+                        xl:col-span-4 md:order-1 md:col-span-8 border border-solid border-light/35'
                     >
-                        <div
-                            className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light'
-                        />
                         <div>
                             <Image src={profilePic} alt='Khalifa MBA' className='w-full h-auto rounded-2xl'
                             priority
                             sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 33vw"
                             />
                         </div>
-                        <div className='flex w-full flex-col items-center justify-center font-bold text-lg pt-6 text-primary dark:text-primaryDark'>
+                        
+                        <div className='flex w-full flex-col items-center justify-center font-bold text-lg pt-6 text-primaryGreenDark dark:text-primaryDark'>
                             <h1>Khalifa MBA</h1>
                         </div>
-                        <div className='flex w-full flex-col items-center justify-center font-bold text-sm'>
+                        <div className='flex w-full flex-col items-center justify-center font-bold text-sm text-dark dark:text-dark'>
                             <h1>Muhammad-Jibril B.A.</h1>
                             <h1>(Al-Fellati Al-Shareef)</h1>
                         </div>
-                        <div className='flex w-full flex-col items-center justify-center font-bold text-xs text-dark/75 dark:text-light/75'>
+                        <div className='flex w-full flex-col items-center justify-center font-bold text-xs text-dark/75 dark:text-dark/75'>
                             <p>SDE| TPM| Architect| Researcher</p>
                             <p>(STAR)</p>
                         </div>
                     </div>
                     <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-between pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
+                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
                                 <AnimatedNumbers value={7} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
@@ -185,16 +185,16 @@ const about = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={40} />+
+                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
+                                <AnimatedNumbers value={208} />Days
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
-                                Projects
+                                Longest Streak
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
+                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
                                 <AnimatedNumbers value={10000} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 

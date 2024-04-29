@@ -132,7 +132,7 @@ const Footer = () => {
           <span>{new Date().getFullYear} &copy; 2023-Present | All Rights Reserved.</span>
             <div className='flex items-center lg:py-4'>
                 Built with <span className='text-primary dark:text-primaryDark text-2xl px-1'>&hearts;</span>
-                by&nbsp;<Link href="https://github.com/alfellati" target={"_black"} className='underline underline-offset-2 text-primary dark:text-primaryDark'>Khalifa MBA</Link>
+                by&nbsp;<Link href="https://github.com/alfellati" target={"_black"} className='underline underline-offset-2 text-primaryGreenDark dark:text-primaryDark'>Khalifa MBA</Link>
             </div>
             <Link href="mailto:jbashir52@gmail.com" target={"_black"} className='underline underline-offset-2'>Say Hello</Link>
         </Layout>

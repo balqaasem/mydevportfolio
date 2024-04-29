@@ -19,7 +19,7 @@ const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
             ' />
 
           <div className='w-full flex flex-col items-start justify-between pl-6'>
-              <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
+              <span className='text-primaryGreenDark dark:text-primaryDark font-medium text-xl'>{tag}</span>
               <Link
               href={visitLink}
               target="_blank"
@@ -58,7 +58,7 @@ const LinkedIn = ({img, tag, title, description, visitLink, subscribeLink}) => {
       />
 
       <div className='w-full flex flex-col items-start justify-between pl-6'>
-          <span className='text-primary dark:text-primaryDark font-medium text-xl'>{tag}</span>
+          <span className='text-primaryGreenDark dark:text-primaryDark font-medium text-xl'>{tag}</span>
           <Link
           href={visitLink}
           target="_blank"

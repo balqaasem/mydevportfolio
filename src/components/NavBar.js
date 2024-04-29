@@ -69,7 +69,7 @@ const NavBar = () => {
             <nav className="flex pb-4 2xl:pb-3 xl:pb-3 justify-center">
                     <Logo />
             </nav>
- 
+
             <buton className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
                 <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
