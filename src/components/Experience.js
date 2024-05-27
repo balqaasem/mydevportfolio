@@ -159,7 +159,7 @@ const Experience = () => {
                 <Details 
                 position="International Sales & Project Manager"
                 company="Green Intelligent（Shenzhen）Co., Ltd."
-                time="Sep. 2022 - Oct. 2022 (2 mos)"
+                time="Sep. 2022 - Oct. 2023"
                 address="Shenzhen, Guangdong, China"
                 work="At Green Intelligent, I specialize in International trade and sales as well as project management of Intelligent Industrial Machinery for the Industry 4.0 revolution.
                 Active,Positive, Altruistic, Progressive, Responsible, Gratitude.. I love my time here at Green, developing my knowledge, skills, thought process, diversity,
@@ -170,7 +170,7 @@ const Experience = () => {
                 <Details 
                 position="Product and Sales Manager"
                 company="Vogtec (H.K.) Co., Ltd."
-                time="Jul. 2022 - Aug. 2022 (2 mos)"
+                time="Jul. 2022 - Aug. 2022"
                 address="Shenzhen, Guangdong, China"
                 work="Worked in sales and marketing, product management and engineering in VoIP telecommunications technology.
                 As a product and sales manager, my role is to oversee and manage the entire product lifecycle, from development to sales.
