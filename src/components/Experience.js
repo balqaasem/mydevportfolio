@@ -51,6 +51,31 @@ const Experience = () => {
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
+                position="Global Business Development Manager"
+                company="Royale Jewelry Ltd."
+                time="Jun. 2022 - Present"
+                address="Qingdao, Shandong, China"
+                work="
+                We produce a wide range of fashion jewelry accessories in metal alloys, 925 serling silver, zinc alloy and brass. 
+                I engage in sales, strategic planning and marketing, I execute business development plans and lead the International Sales 
+                and Marketing Teams as well as maintaining the Business partnerships with our consulting team and global partners.
+                "
+                />
+                
+                <Details 
+                position="Founder, CEO"
+                company="Velicium XYZ"
+                time="May. 2024 - Present"
+                address="Qingdao, Shandong, China"
+                work="
+                Velicium, short for Venilicium which is latin for `Marketing` is as the name implies a marketing firm for the digital age. 
+                We are a digital marketing agency that is rooted with excellence for excellence. In this chaotic world where attention is 
+                the priciest comodity, we get it for you at an affordable rate with a long lasting taste, a far reaching voice and a deep 
+                insight on just the attention you need for your marketing goals to be scored.
+                "
+                />
+                
+                <Details 
                 position="Founder, CEO"
                 company="Open Web3 Foundation"
                 time="Apr. 2021 - Present"
@@ -67,23 +92,39 @@ const Experience = () => {
                 position="Founder, CEO"
                 company="Setheum Labs"
                 time="Nov. 2019 - Present"
-                address="Shenzhen, Guangdong, China"
+                address="Qingdao, Shandong, China"
                 work="
-                I am working on Setheum to build the Blockchain leading Web3.0 that solves a lot of issues and provides a lot of opportunities.
-                Leading Setheum Network's design, a cutting-edge Web3 Cloud powered by Substrate. Revolutionizing industries with smart contracts.
+                Setheum Labs is an open source development organisation involved in Web3 and blockchain development. 
+                Leading the design of the Setheum Network, a cutting-edge Web3 zk-powered blockchain.
                 "
                 />
                 
                 <Details 
                 position="Founder, CEO"
-                company="Slixon Technologies Ltd."
+                company="Slixon Technologies"
                 time="Nov. 2019 - Present"
-                address="Shenzhen, Guangdong, China"
+                address="Weifang, Shandong, China"
                 work="
                 Slixon Tech. Working in AI. Where Web3 Meets AI.
                 "
                 />
                 
+                <Details 
+                position="Member Board of Directors"
+                company="Obelisk Integrated Services Ltd."
+                time="Apr. 2018 - Present"
+                address="Abuja, Fderal Capital Territory, Nigeria - Remote"
+                work="Obelisk Integrated Services is a conglomerate that serves in the Real Estate, Transport, Agriculture and the Import & Export Industries."
+                />
+                
+                <Details 
+                position="Sales Project Manager"
+                company="Obelisk Integrated Services Ltd."
+                time="Aug. 2016 - Nov. 2018"
+                address="Abuja, Fderal Capital Territory, Nigeria"
+                work="Obelisk Integrated Services is a conglomerate that serves in the Real Estate, Transport, Agriculture and the Import & Export Industries."
+                />
+
                 <Details 
                 position="Member"
                 company="Blockchain Research Institute"
@@ -109,77 +150,19 @@ const Experience = () => {
                 />
 
                 <Details 
+                position="Associate Member"
+                company="International Society for Development and Sustainability (ISDS)"
+                time="Jun. 2021 - Present"
+                address="Shenzhen, Guangdong, China - Remote"
+                work=""
+                />
+
+                <Details 
                 position="Member"
                 company="Internet Society"
                 time="Dec. 2018 - Present"
                 address="Shenzhen, Guangdong, China - Remote"
                 work=""
-                />
-                
-                <Details 
-                position="Visionary Director, Board Member"
-                company="Obelisk Integrated Services Ltd."
-                time="Jun. 2018 - Present"
-                address="Abuja, Fderal Capital Territory, Nigeria - Remote"
-                work="Obelisk Integrated Services is a conglomerate that serves in the Real Estate, Transport, Agriculture and the Import & Export Industries."
-                />
-                
-                <Details 
-                position="Creative Director"
-                company="Obelisk Integrated Services Ltd."
-                time="Apr. 2018 - Jun. 2018 (3 mos)"
-                address="Kano, Nigeria"
-                work=""
-                />
-                
-                <Details 
-                position="Project Manager"
-                company="Obelisk Integrated Services Ltd."
-                time="Oct. 2017 - Mar. 2018 (6 mos)"
-                address="Kano, Nigeria"
-                work=""
-                />
-                
-                <Details 
-                position="Sales Manager"
-                company="Obelisk Integrated Services Ltd."
-                time="Jun. 2017 - Sep. 2017 (4 mos)"
-                address="Abuja, Fderal Capital Territory, Nigeria"
-                work=""
-                />
-                
-                <Details 
-                position="Assistant Manager"
-                company="Obelisk Integrated Services Ltd."
-                time="Aug. 2016 - May. 2017 (10 mos)"
-                address="Abuja, Fderal Capital Territory, Nigeria"
-                work=""
-                />
-                
-                <Details 
-                position="International Sales & Project Manager"
-                company="Green Intelligent（Shenzhen）Co., Ltd."
-                time="Sep. 2022 - Oct. 2023"
-                address="Shenzhen, Guangdong, China"
-                work="At Green Intelligent, I specialize in International trade and sales as well as project management of Intelligent Industrial Machinery for the Industry 4.0 revolution.
-                Active,Positive, Altruistic, Progressive, Responsible, Gratitude.. I love my time here at Green, developing my knowledge, skills, thought process, diversity,
-                career and connections is of high importance. Relationships are strengthened along the way, skills are polished along the way, connections are made along the way.
-                Involved in various industries at once is not easy, but it helps forge a thought process that helps in building innovative solutions to connect those industies in creative and nonobvious ways."
-                />
-                
-                <Details 
-                position="Product and Sales Manager"
-                company="Vogtec (H.K.) Co., Ltd."
-                time="Jul. 2022 - Aug. 2022"
-                address="Shenzhen, Guangdong, China"
-                work="Worked in sales and marketing, product management and engineering in VoIP telecommunications technology.
-                As a product and sales manager, my role is to oversee and manage the entire product lifecycle, from development to sales.
-                I work closely with product development teams to define product features, specifications and pricing strategies based on market research and customer needs.
-                In addition, I lead the sales team, develop effective sales strategies, maximize revenue and achieve sales targets.
-                This includes identifying potential customers, building and maintaining relationships with key accounts, and providing sales training and support to the sales team.
-                I also analyze market trends and competitor activities to look for opportunities for product improvement or new product development.
-                Collaboration with cross-functional teams such as marketing, operations and customer service is critical to ensuring successful product launches and satisfied customers.
-                As a Product and Sales Manager, my role is to drive product success and maximize sales growth through effective product management and sales strategies."
                 />
             </ul>
         </div>
