@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Khalifa MBA - Muhammad-Jibril B.A. (Al-Fellati Al-Shareef)</title>
+        <title>Khalifa MBA - Muhammad-Jibril B.A</title>
         <meta name="description" content="The portfolio Website of Muhammad-Jibril B.A. Al-Fellati Al-Shareef (Khalifa MBA)" />
       </Head>
       <TransitionEffect />
@@ -38,9 +38,10 @@ export default function Home() {
               '/>
 
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                As a skilled STAR (SDE, TPM, Architect, and Researcher), I am dedicated to building innovative applications from raw ideas. 
+                As a skilled STAR (SDE, TPM, Architect, Researcher), I am dedicated to building innovative products from raw ideas. 
                 Explore my latest projects, articles and blogs, showcasing my expertise in a plethora of skills ranging from Software Architecture,
-                AI/ML development, R&D, Web3 development to Developer toolings, API & SDK development, etc..
+                AI/ML development, R&D, Web3 development to Developer toolings, API & SDK development, etc.. 
+                I have experience in Sales and Marketing and run Velicium - a Global Digital Marketing and Business Development Firm.
               </p>
 
               <div className='flex items-center self-start mt-2 lg:self-center'>
