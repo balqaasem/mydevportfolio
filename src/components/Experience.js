@@ -64,7 +64,7 @@ const Experience = () => {
                 
                 <Details 
                 position="Founder, CEO"
-                company="Velicium XYZ"
+                company="Velicium Digital"
                 time="May. 2024 - Present"
                 address="Qingdao, Shandong, China"
                 work="
