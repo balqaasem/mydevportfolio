@@ -1,10 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import { motion } from "framer-motion";
 import Image from 'next/image';
 import khalifaIcon from '../../public/images/profile/KhalifaIcon.png'
-
-const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
