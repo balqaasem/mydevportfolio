@@ -46,7 +46,7 @@ const Footer = () => {
               <CustomLink href="/" title="Home" className='mr-4'/>
               <CustomLink href="/about" title="About" className='mx-4'/>
               <CustomLink href="/projects" title="Projects" className='mr-4'/>
-              <CustomLink href="https://blog.alfellati.xyz" title="Blog" className='mx-4'/>
+              <CustomLink href="/blog" title="Blog" className='mx-4'/>
               <CustomLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='mx-4'/>
             </nav>
           </div>
