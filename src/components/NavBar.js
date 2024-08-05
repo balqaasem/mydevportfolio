@@ -86,7 +86,7 @@ const NavBar = () => {
                     <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 '/>
                     <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 '/>
-                    <CustomLink href="https://blog.alfellati.xyz" title="Blog" className='mx-6 xl:mx-3 2xl:mx-4 '/>
+                    <CustomLink href="/blog" title="Blog" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                 </nav>
 
@@ -179,7 +179,7 @@ const NavBar = () => {
                     <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                     <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
                     <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
-                    <CustomMobileLink href="https://blog.alfellati.xyz" title="Blog" className='' toggle={handleClick} />
+                    <CustomMobileLink href="/blog" title="Blog" className='' toggle={handleClick} />
                     <CustomMobileLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='' toggle={handleClick} />
                 </nav>
 
