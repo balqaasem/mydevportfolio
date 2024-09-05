@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from 'fs';
 const matter = require("gray-matter");
 
 const getPostMetadata = () => {
