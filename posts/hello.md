@@ -12,4 +12,4 @@ Hello world!
 
 ### Create an account
 
-Lorem ipsum doler met... bla bla bla.
+Salam alaikum. Lorem ipsum doler met... bla bla bla.
