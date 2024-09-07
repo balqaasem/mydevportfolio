@@ -8,10 +8,7 @@ import PostPreview from '@/components/PostPreview';
 
 const blog = () => {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((post) => (
-    <PostPreview key={post.slug} {...post} />
-  ));
-
+  
   return (
     <>
       <Head>
@@ -26,7 +23,11 @@ const blog = () => {
             className='mb-16 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
           />
           
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>{postPreviews}</div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            {postMetadata.map((post) => (
+              <PostPreview key={post.slug} {...post} />
+            ))}
+          </div>
         </Layout>
       </main>
     </>
