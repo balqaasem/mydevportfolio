@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import Head from 'next/head';
 import '@/styles/globals.css';
+import '@/styles/markdown.css';
 import {Montserrat} from 'next/font/google';
 import Footer from '../components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';

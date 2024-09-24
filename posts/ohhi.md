@@ -2,6 +2,8 @@
 title: "Oh Hi"
 subtitle: "Good second blog post."
 date: "2024-8-5"
+topic: "Math"
+tags: ["Geometry", "Research", "Algorithms"]
 ---
 
 Hello world!
