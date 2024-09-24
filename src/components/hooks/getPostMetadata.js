@@ -17,6 +17,8 @@ const getPostMetadata = () => {
       title: matterResult.data.title,
       subtitle: matterResult.data.subtitle,
       date: matterResult.data.date,
+      topic: matterResult.data.topic || "Uncategorized",
+      tags: matterResult.data.tags || [],
       slug: fileName.replace(".md", ""),
     };
   });
