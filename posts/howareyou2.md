@@ -1,9 +1,10 @@
 ---
 title: "How are you"
 subtitle: "Good third blog post."
-date: "2024-8-5"
+date: "2024-8-7"
 topic: "Technology"
 tags: ["Algorithms", "Research", "Web Development"]
+series: "Disrupted"
 ---
 
 Hello world!

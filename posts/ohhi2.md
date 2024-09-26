@@ -1,8 +1,8 @@
 ---
 title: "Oh Hi"
 subtitle: "Good second blog post."
-date: "2024-8-9"
-topic: "Math"
+date: "2024-9-25"
+topic: "Science"
 tags: ["Geometry", "Research", "Algorithms"]
 series: "That's it"
 ---
