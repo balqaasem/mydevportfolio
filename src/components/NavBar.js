@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router';
-import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, SearchIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
+import SearchPopup from './SearchPopup';
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -51,10 +52,19 @@ const NavBar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false)
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen)
     }
+
+    const handleSearchClick = () => {
+        setIsSearchOpen(true);
+    };
+
+    const handleCloseSearch = () => {
+        setIsSearchOpen(false);
+    };
 
   return (
     <header
@@ -162,6 +172,15 @@ const NavBar = () => {
                         : <MoonIcon className={"fill-dark"}/>
                         }
                     </button>
+
+                    <motion.button
+                      onClick={handleSearchClick}
+                      whileHover={{y:-2}}
+                      whileTap={{scale:0.9}}
+                      className="ml-3 flex items-center justify-center rounded-full p-1"
+                    >
+                      <SearchIcon />
+                    </motion.button>
                 </nav>
             </div>
         </div>
@@ -260,6 +279,10 @@ const NavBar = () => {
 
             : null
         }
+
+        {isSearchOpen && (
+            <SearchPopup onClose={handleCloseSearch} />
+        )}
     </header>
   )
 }
