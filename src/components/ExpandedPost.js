@@ -3,11 +3,14 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
 import remarkGfm from 'remark-gfm';
+import { CloseIcon } from './Icons';
 
 const ExpandedPost = ({ post, onClose }) => {
   return (
     <div className="bg-white dark:bg-dark p-6 rounded-lg shadow-lg overflow-auto max-h-[80vh]">
-      <button onClick={onClose} className="float-right bg-red-500 text-white px-2 py-1 rounded">Close</button>
+      <button onClick={onClose} className=" float-right text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+        <CloseIcon />
+      </button>
       <h2 className="text-2xl font-bold mb-4 dark:text-light">{post.title}</h2>
       <p className="text-gray-500 dark:text-gray-400 mb-2">{post.date}</p>
       <p className="mb-4 dark:text-light">{post.subtitle}</p>
