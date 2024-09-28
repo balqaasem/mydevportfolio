@@ -14,7 +14,8 @@ const ExpandedPost = ({ post, onClose }) => {
       <h2 className="text-2xl font-bold mb-4 dark:text-light">{post.title}</h2>
       <p className="text-gray-500 dark:text-gray-400 mb-2">{post.date}</p>
       <p className="mb-4 dark:text-light">{post.subtitle}</p>
-      <p className="text-sm font-bold text-primaryGreenDark dark:text-primaryDark mb-2">Topic: {post.topic}</p>
+      {post.series && <p className="text-sm font-bold text-blue-500 dark:text-blue-300 mb-2">Series: {post.series}</p>}
+      <p className="text-sm font-bold text-primaryGreenDark dark:text-purple-300 mb-2">Topic: {post.topic}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {post.tags && post.tags.map(tag => (
           <span key={tag} className="tag">{tag}</span>

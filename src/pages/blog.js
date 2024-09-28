@@ -137,8 +137,8 @@ const Blog = ({ posts }) => {
               onChange={(e) => setSortOrder(e.target.value)}
               className="p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark"
             >
-              <option value="newest">Newest to Oldest</option>
-              <option value="oldest">Oldest to Newest</option>
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
             </select>
             <select
               value={filterTopic}
