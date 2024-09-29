@@ -135,7 +135,10 @@ const Blog = ({ posts }) => {
             <select
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
-              className="p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark"
+              className="
+                p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 hover:border-primary
+                hover:dark:border-primaryDark focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
+              "
             >
               <option value="newest">Newest</option>
               <option value="oldest">Oldest</option>
@@ -143,7 +146,10 @@ const Blog = ({ posts }) => {
             <select
               value={filterTopic}
               onChange={(e) => setFilterTopic(e.target.value)}
-              className="p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark"
+              className="
+                p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 hover:border-primary
+                hover:dark:border-primaryDark focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
+              "
             >
               <option value="">All Topics</option>
               {topics.map(topic => (
@@ -153,7 +159,10 @@ const Blog = ({ posts }) => {
             <select
               value={filterTag}
               onChange={(e) => setFilterTag(e.target.value)}
-              className="p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:primary dark:focus:ring-primaryDark"
+              className="
+                p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 hover:border-primary
+                hover:dark:border-primaryDark focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
+              "
             >
               <option value="">All Tags</option>
               {tags.map(tag => (
@@ -164,7 +173,10 @@ const Blog = ({ posts }) => {
             <select
               value={filterSeries}
               onChange={(e) => setFilterSeries(e.target.value)}
-              className="p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:primary dark:focus:ring-primaryDark"
+              className="
+                p-2 border rounded bg-light dark:bg-dark dark:text-light border-gray-300 dark:border-gray-600 hover:border-primary
+                hover:dark:border-primaryDark focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
+              "
             >
               <option value="">All Series</option>
               {series.map(s => (

@@ -115,7 +115,7 @@ const blogs = () => {
                       tag="Medium Author"
                       title="Muhammad-Jibril B.A."
                       description="My Medium profile where I publish stories around my interests, mostly related to the publications I publish for."
-                      visitLink="https://alfellati.medium.com"
+                      visitLink="https://balqaasem.medium.com"
                       subscribeLink="/"
                     /> 
                   </div>

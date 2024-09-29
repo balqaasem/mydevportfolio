@@ -92,7 +92,7 @@ const NavBar = () => {
 
                 <nav className="flex items-center justify-center flex-wrap">
                     
-                    <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mr-3"
@@ -100,7 +100,7 @@ const NavBar = () => {
                         <LinkedInIcon />
                     </motion.a>
 
-                    <motion.a href="https://twitter.com/alfellati" target={"_blank"}
+                    <motion.a href="https://twitter.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-md"
@@ -109,7 +109,7 @@ const NavBar = () => {
                     </motion.a>
 
                     
-                    <motion.a href="https://t.me/alfellati" target={"_blank"}
+                    <motion.a href="https://t.me/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -118,7 +118,7 @@ const NavBar = () => {
                     </motion.a>
                 
 
-                    <motion.a href="https://instagram.com/alfellati" target={"_blank"}
+                    <motion.a href="https://instagram.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -126,7 +126,7 @@ const NavBar = () => {
                         <InstagramIcon />
                     </motion.a>
 
-                    <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
+                    <motion.a href="https://www.youtube.com/@balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 mr-6"
@@ -134,7 +134,7 @@ const NavBar = () => {
                         <YouTubeIcon />
                     </motion.a>
 
-                    <motion.a href="https://alfellati.medium.com" target={"_blank"}
+                    <motion.a href="https://balqaasem.medium.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -142,7 +142,7 @@ const NavBar = () => {
                         <MediumIcon />
                     </motion.a>
 
-                    <motion.a href="https://github.com/alfellati" target={"_blank"}
+                    <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 ml-3 bg-dark text-light rounded-full"
@@ -186,7 +186,7 @@ const NavBar = () => {
 
                 <nav className="flex items-center justify-center flex-wra mt-2">
                     
-                    <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mr-3 sm:mx-1"
@@ -194,7 +194,7 @@ const NavBar = () => {
                         <LinkedInIcon />
                     </motion.a>
 
-                    <motion.a href="https://twitter.com/alfellati" target={"_blank"}
+                    <motion.a href="https://twitter.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-md"
@@ -203,7 +203,7 @@ const NavBar = () => {
                     </motion.a>
 
                     
-                    <motion.a href="https://t.me/alfellati" target={"_blank"}
+                    <motion.a href="https://t.me/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -212,7 +212,7 @@ const NavBar = () => {
                     </motion.a>
                    
 
-                    <motion.a href="https://instagram.com/alfellati" target={"_blank"}
+                    <motion.a href="https://instagram.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-full dark:bg-dark sm:mx-1"
@@ -220,7 +220,7 @@ const NavBar = () => {
                         <InstagramIcon />
                     </motion.a>
 
-                    <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
+                    <motion.a href="https://www.youtube.com/@balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 sm:mx-3"
@@ -228,7 +228,7 @@ const NavBar = () => {
                         <YouTubeIcon />
                     </motion.a>
 
-                    <motion.a href="https://alfellati.medium.com" target={"_blank"}
+                    <motion.a href="https://balqaasem.medium.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 sm:mx-1"
@@ -236,7 +236,7 @@ const NavBar = () => {
                         <MediumIcon />
                     </motion.a>
 
-                    <motion.a href="https://github.com/alfellati" target={"_blank"}
+                    <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 ml-3 bg-dark text-light rounded-full sm:mx-1"

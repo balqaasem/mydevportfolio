@@ -358,8 +358,8 @@ const projects = () => {
                                 title="LlamaLit AI"
                                 img={llamalitImage}
                                 summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
-                                link="https://github.com/alfellati/llamalit-ai"
-                                github="https://github.com/alfellati/llamalit-ai"
+                                link="https://github.com/balqaasem/llamalit-ai"
+                                github="https://github.com/balqaasem/llamalit-ai"
                                 type="Llama AI Chatbot"
                             />
                         </div>
@@ -412,7 +412,7 @@ const projects = () => {
                             img={project1}
                             summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
                             link="/"
-                            github="https://github.com/alfellati/yoilit-ai"
+                            github="https://github.com/balqaasem/yoilit-ai"
                             type="Llama AI Chatbot"
                         />
                     </div> */}
@@ -421,8 +421,8 @@ const projects = () => {
                             title="Cesva AI"
                             img={project1}
                             summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
-                            link="https://github.com/alfellati/cesva-ai"
-                            github="https://github.com/alfellati/cesva-ai"
+                            link="https://github.com/balqaasem/cesva-ai"
+                            github="https://github.com/balqaasem/cesva-ai"
                             type="FAISS AI Chatbot"
                         />
                     </div> */}

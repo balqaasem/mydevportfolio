@@ -7,7 +7,7 @@ import { CloseIcon } from './Icons';
 
 const ExpandedPost = ({ post, onClose }) => {
   return (
-    <div className="bg-white dark:bg-dark p-6 rounded-lg shadow-lg overflow-auto max-h-[80vh]">
+    <div className="bg-gray-50 dark:bg-dark p-6 rounded-lg shadow-lg overflow-auto max-h-[80vh]">
       <button onClick={onClose} className=" float-right text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
         <CloseIcon />
       </button>
