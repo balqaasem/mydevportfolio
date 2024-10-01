@@ -10,6 +10,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 import getPostMetadata from '@/components/hooks/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
 import ExpandedPost from '@/components/ExpandedPost';
+import SubscriptionForm from '@/components/SubscriptionForm';
 
 // Fetch post metadata at build time
 export const getStaticProps = async () => {
@@ -112,7 +113,7 @@ const Blog = ({ posts }) => {
       setCurrentPage(newPage);
     }
   };
-
+  
   return (
     <>
       <Head>
@@ -183,6 +184,10 @@ const Blog = ({ posts }) => {
                 <option key={s} value={s}>{s}</option>
               ))}
             </select>
+            
+            {/* Newsletter Subscription Form */}
+            <SubscriptionForm />
+
           </div>
 
           <div className={`grid ${expandedPost ? 'grid-cols-[2fr_1fr]' : 'grid-cols-1 md:grid-cols-2'} gap-4`}>

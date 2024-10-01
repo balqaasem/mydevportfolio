@@ -87,10 +87,9 @@ const NavBar = () => {
                     <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/blog" title="Blog" className='mx-6 xl:mx-3 2xl:mx-4 '/>
-                    <CustomLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                 </nav>
 
-                <nav className="flex items-center justify-center flex-wrap">
+                <nav className="flex items-center justify-center flex-wrap navbar-socials">
                     
                     <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
@@ -181,7 +180,6 @@ const NavBar = () => {
                     <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
                     <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
                     <CustomMobileLink href="/blog" title="Blog" className='' toggle={handleClick} />
-                    <CustomMobileLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='' toggle={handleClick} />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wra mt-2">

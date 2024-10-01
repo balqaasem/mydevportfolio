@@ -129,7 +129,7 @@ const about = () => {
                 <CategoriesNav />
                 <div>
                     <AnimatedText
-                        text="Behind a Shining STAR!"
+                        text="Want To Know About Me?"
                         className='!mb-5 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-4'
                     />
                 </div>
@@ -175,8 +175,8 @@ const about = () => {
                     </div>
                     <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-between pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={7} />+
+                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
+                                <AnimatedNumbers value={16} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
@@ -184,7 +184,7 @@ const about = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
+                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
                                 <AnimatedNumbers value={208} /> Days
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
@@ -193,7 +193,7 @@ const about = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
+                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
                                 <AnimatedNumbers value={10000} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 

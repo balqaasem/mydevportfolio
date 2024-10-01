@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
+import SubscriptionForm from '@/components/SubscriptionForm';
 
 const CustomLink = ({href, title, className=""}) => {
   const router = useRouter();
@@ -28,14 +29,6 @@ const CustomLink = ({href, title, className=""}) => {
 const Footer = () => {
 
   const [mode, setMode] = useThemeSwitcher();
-  const [email, setEmail] = useState('');
-
-  const handleSubscription = async (e) => {
-    e.preventDefault();
-    // Add logic to handle email subscription with ConvertKit
-    console.log(`Subscribed: ${email}`);
-    setEmail('');
-  };
 
   return (
     <footer className='w-full border-t-2 border-solid border-dark
@@ -56,7 +49,6 @@ const Footer = () => {
                 <CustomLink href="/about" title="About" className='mx-4'/>
                 <CustomLink href="/projects" title="Projects" className='mr-4'/>
                 <CustomLink href="/blog" title="Blog" className='mx-4'/>
-                <CustomLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='mx-4'/>
               </nav>
             </div>
 
@@ -138,31 +130,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Footer Subscription Form */}
+          {/* Newsletter Subscription Form */}
           <div className="footer-right footer-subscription flex flex-col items-center">
             <h2>Subscribe to our Newsletter</h2>
-            <form onSubmit={handleSubscription} className="flex items-center">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                required
-                className="
-                  p-2 mr-2 bg-light text-gray-400 dark:bg-dark dark:text-gray-300 rounded border 
-                  border-gray-300 dark:border-gray-600 hover:border-primary hover:dark:border-primaryDark
-                  focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
-                "
-              />
-              <button
-                type="submit"
-                className="
-                  p-2 bg-primary dark:bg-primaryDark text-primaryDark dark:text-primary
-                  hover:bg-primaryDark hover:dark:bg-primary hover:text-primary hover:dark:text-primaryDark rounded
-                ">
-                Subscribe
-              </button>
-            </form>
+            <SubscriptionForm />
           </div>
         </Layout>
 
