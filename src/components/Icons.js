@@ -1,5 +1,24 @@
 import * as React from "react";
 
+export const EmailIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="#e4f4f4"
+    stroke="#1b2b3b"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`feather feather-mail ${className}`}
+    {...rest}
+  >
+    <path d="M22 4H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+    <path d="M22 6l-10 7L2 6" fill="#e4f4f4" />
+  </svg>
+);
+
 export const SearchIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

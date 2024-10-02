@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, EmailIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -149,6 +149,14 @@ const NavBar = () => {
                         <GithubIcon />
                     </motion.a>
 
+                    <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <EmailIcon />
+                    </motion.a>
+
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
                     className={`ml-3 flex items-center justify-center rounded-full p-1
@@ -242,6 +250,14 @@ const NavBar = () => {
                         <GithubIcon />
                     </motion.a>
 
+                    <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <EmailIcon />
+                    </motion.a>
+                    
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
                     className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1

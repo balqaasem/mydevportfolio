@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
-import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, EmailIcon } from './Icons';
 import Logo from './Logo';
 import Layout from './Layout'
 import Link from 'next/link';
@@ -111,6 +111,14 @@ const Footer = () => {
                 className="w-6 ml-3 bg-dark text-light rounded-full border border-light"
                 >
                     <GithubIcon />
+                </motion.a>
+
+                <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
+                whileHover={{y:-2}}
+                whileTap={{scale:0.9}}
+                className="w-6 mx-3"
+                >
+                    <EmailIcon />
                 </motion.a>
 
                 <button
