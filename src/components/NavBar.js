@@ -2,9 +2,12 @@ import { useRouter } from 'next/router';
 import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, EmailIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
+import SubscribeButton from './SubscribeButton';
+import SubscriptionFormLayered from './SubscriptionFormLayered';
+import SubscribePopup from './SubscribePopup';
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -50,11 +53,20 @@ const CustomMobileLink = ({href, title, className="", toggle}) => {
 const NavBar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
 
     const handleClick = () => {
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(prev => !prev);
+    };
+
+    const handleSubscribeClick = () => {
+        setIsSubscribeOpen(true);
+    };
+
+    const handleCloseSubscribe = () => {
+        setIsSubscribeOpen(false);
+    };
 
   return (
     <header
@@ -70,11 +82,12 @@ const NavBar = () => {
                     <Logo />
             </nav>
 
-            <buton className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+            <buton className='flex-col justify-center items-center hidden lg:flex menu-button' onClick={handleClick}>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </buton>
+
             <div className='w-full flex justify-between items-center lg:hidden'>
                 
                 {/* A space hack to put the logo where it is supposed to be */}
@@ -82,7 +95,7 @@ const NavBar = () => {
                     {/* <Logo /> */}
                 </nav>
 
-                <nav>
+                <nav className='navbar-links'>
                     <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 '/>
                     <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 '/>
@@ -90,7 +103,6 @@ const NavBar = () => {
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap navbar-socials">
-                    
                     <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
@@ -144,7 +156,7 @@ const NavBar = () => {
                     <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className="w-6 ml-3 bg-dark text-light rounded-full"
+                    className="w-6 mx-3 bg-dark text-light rounded-full"
                     >
                         <GithubIcon />
                     </motion.a>
@@ -159,7 +171,7 @@ const NavBar = () => {
 
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                    className={`ml-3 flex items-center justify-center rounded-full p-1
+                    className={`mx-3 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                     `}
                     >
@@ -169,7 +181,10 @@ const NavBar = () => {
                         : <MoonIcon className={"fill-dark"}/>
                         }
                     </button>
-
+                
+                    <nav className='navbar-subscribe ml-3'>
+                        <SubscribeButton onClick={handleSubscribeClick} />
+                    </nav>
                 </nav>
             </div>
         </div>
@@ -183,15 +198,20 @@ const NavBar = () => {
             className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             bg-primary/40 dark:bg-primaryDark/40 rounded-lg backdrop-blur-md py-32
             '>
-                <nav className='flex items-center flex-col justify-center'>
-                    <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/blog" title="Blog" className='' toggle={handleClick} />
+                <buton className='flex-col justify-center items-center hidden lg:flex menu-button' onClick={handleClick} style={{position: 'absolute', top: '5%', right: '10%'}}>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+                </buton>
+
+                <nav className='flex items-center flex-col justify-center navbar-mobile-links'>
+                    <CustomMobileLink href="/" title="Home" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/about" title="About" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/projects" title="Projects" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/blog" title="Blog" className='text-dark dark:text-light' toggle={handleClick} />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wra mt-2">
-                    
                     <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
@@ -233,7 +253,7 @@ const NavBar = () => {
                     >
                         <YouTubeIcon />
                     </motion.a>
-
+                    
                     <motion.a href="https://balqaasem.medium.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
@@ -245,7 +265,7 @@ const NavBar = () => {
                     <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className="w-6 ml-3 bg-dark text-light rounded-full sm:mx-1"
+                    className="w-6 mx-3 bg-dark text-light rounded-full sm:mx-1"
                     >
                         <GithubIcon />
                     </motion.a>
@@ -253,14 +273,16 @@ const NavBar = () => {
                     <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className="w-6 mx-3"
+                    className="w-6 ml-3"
                     >
                         <EmailIcon />
                     </motion.a>
-                    
+                </nav>
+
+                <nav className="flex items-center justify-center flex-wra mt-2">
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                    className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1
+                    className={`flex items-center justify-center rounded-full p-1 sm:mx-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                      sm:mx-1`}
                     >
@@ -271,10 +293,17 @@ const NavBar = () => {
                         }
                     </button>
                 </nav>
+                
+                <nav className='mobile-navbar-subscribe flex items-center justify-center flex-wra mt-2'>
+                    <SubscriptionFormLayered/>
+                </nav>
             </motion.div>
 
             : null
         }
+        {isSubscribeOpen && (
+            <SubscribePopup onClose={handleCloseSubscribe} />
+        )}
     </header>
   )
 }

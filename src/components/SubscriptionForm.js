@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SubscribeButton from './SubscribeButton';
 
 const SubscriptionForm = () => {
   const [email, setEmail] = useState('');
@@ -25,14 +26,7 @@ const SubscriptionForm = () => {
             focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primaryDark
           "
         />
-        <button
-          type="submit"
-          className="
-            p-2 rounded bg-red-600 dark:bg-red-600 text-light dark:text-light hover:bg-primary
-            hover:dark:bg-primaryDark hover:text-primaryDark hover:dark:text-primary
-          ">
-          Subscribe
-        </button>
+        <SubscribeButton/>
       </form>
     </div>
   );
