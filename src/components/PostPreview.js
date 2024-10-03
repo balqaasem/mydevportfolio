@@ -15,7 +15,7 @@ const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, img }) 
     router.push(`/blog?slug=${slug}`, undefined, { shallow: true });
   };
 
-  const link = `/blog?slug=${slug}`;
+  const link = `https://balqaasem.xyz/blog?slug=${slug}`;
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(link);
