@@ -106,10 +106,6 @@ const Project = ({type, title, summary, img, link, github}) => {
             border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
         >
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
-                rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'
-            />
-
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-hidden ronded-lg lg:w-full'
             >
