@@ -10,13 +10,13 @@ const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, onClick
   };
 
   return (
-    <div 
+    <article 
       onClick={handleClick}
       className="
         border border-solid border-gray-300 dark:border-gray-600 p-4 rounded-md shadow-sm
         bg-light dark:bg-dark cursor-pointer hover:shadow-md transition-shadow duration-300
         hover:border-primaryGreenDark hover:dark:border-purple-400
-        "
+      "
     >
       <h2 className="text-2xl font-bold mb-2 text-dark dark:text-light">
         {title}
@@ -30,7 +30,7 @@ const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, onClick
           <span key={tag} className="tag">{tag}</span>
         ))}
       </div>
-    </div>
+    </article>
   );
 };
 

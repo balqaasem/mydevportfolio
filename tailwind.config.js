@@ -71,21 +71,33 @@ module.exports = {
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
+      // Large screens (desktops)
+      // 6
   
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
+      // Medium screens (desktops)
+      // 5
   
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
+      // Small tablets  (smaller than md/Large mobile devices)
+      // 3
   
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
+      // Large mobile devices (bigger than lg/Small tablets)
+      // 4
   
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
+      // Small mobile devices
+      // 2
   
       xs: { max: "479px" },
       // => @media (max-width: 479px) { ... }
+      // Extra small mobile devices
+      // 1
   },
   },
   plugins: [],

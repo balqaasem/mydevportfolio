@@ -127,12 +127,12 @@ const Blog = ({ posts }) => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Listen To The Words of Wisdom!"
-            className="mb-16 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl"
+            text="Read My Articles!"
+            className="mb-16 lg:!text-6xl sm:mb-8 sm!text-6xl xs:!text-3xl"
           />
 
           {/* Filtering and sorting controls */}
-          <div className="mb-8 flex flex-wrap gap-4">
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-4 filter-sort-controls ">
             <select
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
@@ -187,16 +187,15 @@ const Blog = ({ posts }) => {
             
             {/* Newsletter Subscription Form */}
             <SubscriptionForm />
-
           </div>
 
-          <div className={`grid ${expandedPost ? 'grid-cols-[2fr_1fr]' : 'grid-cols-1 md:grid-cols-2'} gap-4`}>
+          <div className={`grid grid-cols-1 ${expandedPost ? 'grid-cols-1' : 'grid-cols-1'} gap-4`}>
             {expandedPost && (
               <div className="col-span-1 row-span-2">
                 <ExpandedPost post={expandedPost} onClose={() => setExpandedPost(null)} />
               </div>
             )}
-            <div className={`grid ${expandedPost ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'} gap-4`}>
+            <div className={`grid ${expandedPost ? 'grid-cols-1' : 'grid-cols-1'} gap-4`}>
               {paginatedPosts
                 .filter((post) => post !== expandedPost)
                 .map((post) => (
