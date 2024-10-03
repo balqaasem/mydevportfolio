@@ -169,10 +169,15 @@ const NavBar = () => {
                         <EmailIcon />
                     </motion.a>
 
+                    <nav className='navbar-subscribe mx-3'>
+                        <SubscribeButton onClick={handleSubscribeClick} />
+                    </nav>
+
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                    className={`mx-3 flex items-center justify-center rounded-full p-1
+                    className={`ml-4 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                    navbar-theme-button
                     `}
                     >
                         {
@@ -181,10 +186,6 @@ const NavBar = () => {
                         : <MoonIcon className={"fill-dark"}/>
                         }
                     </button>
-                
-                    <nav className='navbar-subscribe ml-3'>
-                        <SubscribeButton onClick={handleSubscribeClick} />
-                    </nav>
                 </nav>
             </div>
         </div>
