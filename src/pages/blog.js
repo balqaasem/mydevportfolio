@@ -124,11 +124,11 @@ const Blog = ({ posts }) => {
         />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+      <main className="w-full mb-12 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Read My Articles!"
-            className="mb-16 lg:!text-6xl sm:mb-8 sm!text-6xl xs:!text-3xl"
+            className="mb-10 lg:!text-6xl sm:mb-8 sm!text-6xl xs:!text-3xl"
           />
 
           {/* Filtering and sorting controls */}

@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+const FramerImage = motion(Image);
 
 const getPostMetadata = () => {
   const postsDirectory = path.join(process.cwd(), "posts"); // Use absolute path

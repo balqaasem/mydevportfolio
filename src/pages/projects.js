@@ -101,16 +101,18 @@ const CategoriesNav = () => {
 const Project = ({type, title, summary, img, link, github}) => {
 
     return(
-        <article
+        <motion.article
             className='w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl
-            border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12
+            border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-10
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
+            whileHover={{y:-2}}
         >
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-hidden ronded-lg lg:w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                 whileHover={{scale:1.05}}
+                whileTap={{scale:0.9}}
                 transition={{duration:0.2}}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
@@ -140,7 +142,7 @@ const Project = ({type, title, summary, img, link, github}) => {
                     > Visit Project</Link>
                 </div>
             </div>
-        </article>
+        </motion.article>
     )
 }
 
@@ -157,7 +159,7 @@ const projects = () => {
                 <CategoriesNav />
                 <AnimatedText
                     text="Building Great Projects!"
-                    className='mb-16 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
+                    className='mb-10 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
                 />
 
                 <div className='w-full flex flex-col items-center justify-between gap-24 gap-y-32'>
