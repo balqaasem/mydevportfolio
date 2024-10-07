@@ -72,9 +72,9 @@ const Blog = ({ posts }) => {
   };
 
   // Get unique topics, tags, and series
-  const topics = [...new Set(posts.map(post => post.topic))];
-  const tags = [...new Set(posts.flatMap(post => post.tags))];
-  const series = [...new Set(posts.map(post => post.series).filter(Boolean))];
+  const topics = [...new Set(posts.map(post => post.topic))].sort();
+  const tags = [...new Set(posts.flatMap(post => post.tags))].sort();
+  const series = [...new Set(posts.map(post => post.series).filter(Boolean))].sort();
 
   // Filter and sort posts
   const sortedAndFilteredPosts = posts
