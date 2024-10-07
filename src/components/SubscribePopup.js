@@ -29,14 +29,16 @@ const SubscribePopup = ({ onClose }) => {
             <div ref={popupRef} className="bg-radialSunLight dark:bg-radialSunDark p-6 rounded-lg w-full max-w-md">
                 <div className="flex justify-between items-center mb-4">
                     <div className="text-center">
-                        <h2 className="text-xl font-bold">Subscribe to Newsletter</h2>
+                        <div className="flex justify-between items-center mb-4">
+                            <h2 className="text-xl font-bold">Subscribe to Newsletter</h2>
+                            <button onClick={onClose} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                                <CloseIcon />
+                            </button>
+                        </div>
                         <p className="text-m">
                             Get notified in your email whenever I publish an article. Enjoy the content!
                         </p>
                     </div>
-                    <button onClick={onClose} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                        <CloseIcon />
-                    </button>
                 </div>
                 <SubscriptionForm />
             </div>

@@ -7,10 +7,9 @@ import Link from 'next/link';
 import {LinkArrow} from '../components/Icons';
 import profilePic from "../../public/images/profile/khalifa-art-3-transparent.png";
 import AnimatedText from '../components/AnimatedText';
-import HireMe from '../components/HireMe';
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 import TransitionEffect from '@/components/TransitionEffect';
 import SubscribeButton from '@/components/SubscribeButton';
+import SubscribePopup from '@/components/SubscribePopup';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,7 +53,7 @@ export default function Home() {
               '/>
 
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                As a skilled STAR (SDE, TPM, Architect, Researcher), I am dedicated to building innovative products from raw ideas. I love learning and building.
+                As an Artist, Engineer and Scientist, I am dedicated to building innovative products from raw ideas. I love learning and building.
               </p>
 
               <div className='flex items-center self-start mt-2 lg:self-center'>
@@ -67,12 +66,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {isSubscribeOpen && (
+              <SubscribePopup onClose={handleCloseSubscribe} />
+          )}
         </Layout>
-
-        {/* <HireMe /> */}
-        {/* <div className='absolute right-8 bottom-8 inline-block w-24 md:bottom-[300px] lg:bottom-[260px]'>
-          <Image src={lightBulb} alt="Khalifa MBA" className='w-full h-auto' />
-        </div> */}
       </main>
     </>
   )

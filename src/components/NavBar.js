@@ -51,7 +51,6 @@ const CustomMobileLink = ({href, title, className="", toggle}) => {
 }
 
 const NavBar = () => {
-
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false);
     const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
