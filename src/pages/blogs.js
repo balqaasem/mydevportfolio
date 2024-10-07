@@ -14,10 +14,6 @@ const Medium = ({img, tag, title, description, visitLink, subscribeLink}) => {
             rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
         >
-          <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
-            rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]
-            ' />
-
           <div className='w-full flex flex-col items-start justify-between pl-6'>
               <span className='text-primaryGreenDark dark:text-primaryDark font-medium text-xl'>{tag}</span>
               <Link
@@ -53,10 +49,6 @@ const LinkedIn = ({img, tag, title, description, visitLink, subscribeLink}) => {
         rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
     >
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
-        rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'
-      />
-
       <div className='w-full flex flex-col items-start justify-between pl-6'>
           <span className='text-primaryGreenDark dark:text-primaryDark font-medium text-xl'>{tag}</span>
           <Link
@@ -115,7 +107,7 @@ const blogs = () => {
                       tag="Medium Author"
                       title="Muhammad-Jibril B.A."
                       description="My Medium profile where I publish stories around my interests, mostly related to the publications I publish for."
-                      visitLink="https://alfellati.medium.com"
+                      visitLink="https://balqaasem.medium.com"
                       subscribeLink="/"
                     /> 
                   </div>

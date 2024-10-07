@@ -1,5 +1,42 @@
 import * as React from "react";
 
+export const EmailIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="#e4f4f4"
+    stroke="#1b2b3b"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`feather feather-mail ${className}`}
+    {...rest}
+  >
+    <path d="M22 4H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+    <path d="M22 6l-10 7L2 6" fill="#e4f4f4" />
+  </svg>
+);
+
+export const CopyIcon = ({ className, ...rest }) => (
+  <svg
+    className={`feather feather-copy ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+    fill="#e4f4f4"
+    stroke="#1b2b3b"
+    strokeWidth="2"
+    width="32"
+    height="32"
+    viewBox="0 0 330 330"
+    {...rest}
+  >
+    <path d="M35 270h45v45c0 8.284 6.716 15 15 15h200c8.284 0 15-6.716 15-15V75c0-8.284-6.716-15-15-15h-45V15c0-8.284-6.716-15-15-15H35c-8.284 0-15 6.716-15 15v240c0 8.284 6.716 15 15 15zm245 30H110V90h170v210zM50 30h170v30H95c-8.284 0-15 6.716-15 15v165H50V30z" />
+    <path d="M155 120c-8.284 0-15 6.716-15 15s6.716 15 15 15h80c8.284 0 15-6.716 15-15s-6.716-15-15-15h-80zM235 180h-80c-8.284 0-15 6.716-15 15s6.716 15 15 15h80c8.284 0 15-6.716 15-15s-6.716-15-15-15zM235 240h-80c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15h80c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15z" />
+  </svg>
+);
+
 export const SearchIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

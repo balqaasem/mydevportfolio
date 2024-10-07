@@ -1,11 +1,13 @@
 import { useRouter } from 'next/router';
-import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, SearchIcon } from './Icons';
+import { LinkedInIcon, TwitterIcon, TelegramIcon, InstagramIcon, MediumIcon, GithubIcon, YouTubeIcon, SunIcon, MoonIcon, EmailIcon } from './Icons';
 import Logo from './Logo';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
-import SearchPopup from './SearchPopup';
+import SubscribeButton from './SubscribeButton';
+import SubscriptionFormLayered from './SubscriptionFormLayered';
+import SubscribePopup from './SubscribePopup';
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -51,19 +53,19 @@ const CustomMobileLink = ({href, title, className="", toggle}) => {
 const NavBar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
-    const [isOpen, setIsOpen] = useState(false)
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
 
     const handleClick = () => {
-        setIsOpen(!isOpen)
-    }
-
-    const handleSearchClick = () => {
-        setIsSearchOpen(true);
+        setIsOpen(prev => !prev);
     };
 
-    const handleCloseSearch = () => {
-        setIsSearchOpen(false);
+    const handleSubscribeClick = () => {
+        setIsSubscribeOpen(true);
+    };
+
+    const handleCloseSubscribe = () => {
+        setIsSubscribeOpen(false);
     };
 
   return (
@@ -80,11 +82,12 @@ const NavBar = () => {
                     <Logo />
             </nav>
 
-            <buton className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
-                <span className={`bg-dark hover:bg-light/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+            <buton className='flex-col justify-center items-center hidden lg:flex menu-button' onClick={handleClick}>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
+                <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </buton>
+
             <div className='w-full flex justify-between items-center lg:hidden'>
                 
                 {/* A space hack to put the logo where it is supposed to be */}
@@ -92,17 +95,15 @@ const NavBar = () => {
                     {/* <Logo /> */}
                 </nav>
 
-                <nav>
+                <nav className='navbar-links'>
                     <CustomLink href="/" title="Home" className='mr-6 xl:mr-3 2xl:mr-4 '/>
                     <CustomLink href="/about" title="About" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/projects" title="Projects" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                     <CustomLink href="/blog" title="Blog" className='mx-6 xl:mx-3 2xl:mx-4 '/>
-                    <CustomLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='mx-6 xl:mx-3 2xl:mx-4 '/>
                 </nav>
 
-                <nav className="flex items-center justify-center flex-wrap">
-                    
-                    <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
+                <nav className="flex items-center justify-center flex-wrap navbar-socials">
+                    <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mr-3"
@@ -110,7 +111,7 @@ const NavBar = () => {
                         <LinkedInIcon />
                     </motion.a>
 
-                    <motion.a href="https://twitter.com/alfellati" target={"_blank"}
+                    <motion.a href="https://twitter.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-md"
@@ -119,7 +120,7 @@ const NavBar = () => {
                     </motion.a>
 
                     
-                    <motion.a href="https://t.me/alfellati" target={"_blank"}
+                    <motion.a href="https://t.me/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -128,7 +129,7 @@ const NavBar = () => {
                     </motion.a>
                 
 
-                    <motion.a href="https://instagram.com/alfellati" target={"_blank"}
+                    <motion.a href="https://instagram.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -136,7 +137,7 @@ const NavBar = () => {
                         <InstagramIcon />
                     </motion.a>
 
-                    <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
+                    <motion.a href="https://www.youtube.com/@balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 mr-6"
@@ -144,7 +145,7 @@ const NavBar = () => {
                         <YouTubeIcon />
                     </motion.a>
 
-                    <motion.a href="https://alfellati.medium.com" target={"_blank"}
+                    <motion.a href="https://balqaasem.medium.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -152,18 +153,31 @@ const NavBar = () => {
                         <MediumIcon />
                     </motion.a>
 
-                    <motion.a href="https://github.com/alfellati" target={"_blank"}
+                    <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className="w-6 ml-3 bg-dark text-light rounded-full"
+                    className="w-6 mx-3 bg-dark text-light rounded-full"
                     >
                         <GithubIcon />
                     </motion.a>
 
+                    <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                    >
+                        <EmailIcon />
+                    </motion.a>
+
+                    <nav className='navbar-subscribe mx-3'>
+                        <SubscribeButton onClick={handleSubscribeClick} />
+                    </nav>
+
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                    className={`ml-3 flex items-center justify-center rounded-full p-1
+                    className={`ml-4 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                    navbar-theme-button
                     `}
                     >
                         {
@@ -172,15 +186,6 @@ const NavBar = () => {
                         : <MoonIcon className={"fill-dark"}/>
                         }
                     </button>
-
-                    <motion.button
-                      onClick={handleSearchClick}
-                      whileHover={{y:-2}}
-                      whileTap={{scale:0.9}}
-                      className="ml-3 flex items-center justify-center rounded-full p-1"
-                    >
-                      <SearchIcon />
-                    </motion.button>
                 </nav>
             </div>
         </div>
@@ -194,17 +199,21 @@ const NavBar = () => {
             className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             bg-primary/40 dark:bg-primaryDark/40 rounded-lg backdrop-blur-md py-32
             '>
-                <nav className='flex items-center flex-col justify-center'>
-                    <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
-                    <CustomMobileLink href="/blog" title="Blog" className='' toggle={handleClick} />
-                    <CustomMobileLink href="https://www.linkedin.com/newsletters/7048092243454263296/" title="Newsletter" className='' toggle={handleClick} />
+                <buton className='flex-col justify-center items-center hidden lg:flex menu-button' onClick={handleClick} style={{position: 'absolute', top: '5%', right: '10%'}}>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-00'} `}></span>
+                    <span className={`bg-dark dark:bg-light hover:bg-light/50 dark:hover:bg-dark/50 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+                </buton>
+
+                <nav className='flex items-center flex-col justify-center navbar-mobile-links'>
+                    <CustomMobileLink href="/" title="Home" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/about" title="About" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/projects" title="Projects" className='text-dark dark:text-light' toggle={handleClick} />
+                    <CustomMobileLink href="/blog" title="Blog" className='text-dark dark:text-light' toggle={handleClick} />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wra mt-2">
-                    
-                    <motion.a href="https://www.linkedin.com/in/alfellati/" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mr-3 sm:mx-1"
@@ -212,7 +221,7 @@ const NavBar = () => {
                         <LinkedInIcon />
                     </motion.a>
 
-                    <motion.a href="https://twitter.com/alfellati" target={"_blank"}
+                    <motion.a href="https://twitter.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-md"
@@ -221,7 +230,7 @@ const NavBar = () => {
                     </motion.a>
 
                     
-                    <motion.a href="https://t.me/alfellati" target={"_blank"}
+                    <motion.a href="https://t.me/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3"
@@ -230,7 +239,7 @@ const NavBar = () => {
                     </motion.a>
                    
 
-                    <motion.a href="https://instagram.com/alfellati" target={"_blank"}
+                    <motion.a href="https://instagram.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-dark rounded-full dark:bg-dark sm:mx-1"
@@ -238,15 +247,15 @@ const NavBar = () => {
                         <InstagramIcon />
                     </motion.a>
 
-                    <motion.a href="https://www.youtube.com/@alfellati" target={"_blank"}
+                    <motion.a href="https://www.youtube.com/@balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 sm:mx-3"
                     >
                         <YouTubeIcon />
                     </motion.a>
-
-                    <motion.a href="https://alfellati.medium.com" target={"_blank"}
+                    
+                    <motion.a href="https://balqaasem.medium.com" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 sm:mx-1"
@@ -254,17 +263,27 @@ const NavBar = () => {
                         <MediumIcon />
                     </motion.a>
 
-                    <motion.a href="https://github.com/alfellati" target={"_blank"}
+                    <motion.a href="https://github.com/balqaasem" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className="w-6 ml-3 bg-dark text-light rounded-full sm:mx-1"
+                    className="w-6 mx-3 bg-dark text-light rounded-full sm:mx-1"
                     >
                         <GithubIcon />
                     </motion.a>
 
+                    <motion.a href="mailto:jbashir52@gmail.com" target={"_blank"}
+                    whileHover={{y:-2}}
+                    whileTap={{scale:0.9}}
+                    className="w-6 ml-3"
+                    >
+                        <EmailIcon />
+                    </motion.a>
+                </nav>
+
+                <nav className="flex items-center justify-center flex-wra mt-2">
                     <button
                     onClick={() => setMode(mode === 'light'? 'dark' : 'light')}
-                    className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1
+                    className={`flex items-center justify-center rounded-full p-1 sm:mx-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                      sm:mx-1`}
                     >
@@ -275,13 +294,16 @@ const NavBar = () => {
                         }
                     </button>
                 </nav>
+                
+                <nav className='mobile-navbar-subscribe flex items-center justify-center flex-wra mt-2'>
+                    <SubscriptionFormLayered/>
+                </nav>
             </motion.div>
 
             : null
         }
-
-        {isSearchOpen && (
-            <SearchPopup onClose={handleCloseSearch} />
+        {isSubscribeOpen && (
+            <SubscribePopup onClose={handleCloseSubscribe} />
         )}
     </header>
   )

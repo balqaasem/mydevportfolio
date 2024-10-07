@@ -101,20 +101,18 @@ const CategoriesNav = () => {
 const Project = ({type, title, summary, img, link, github}) => {
 
     return(
-        <article
+        <motion.article
             className='w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl
-            border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12
+            border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-10
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
+            whileHover={{y:-2}}
         >
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
-                rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'
-            />
-
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-hidden ronded-lg lg:w-full'
             >
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                 whileHover={{scale:1.05}}
+                whileTap={{scale:0.9}}
                 transition={{duration:0.2}}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 50vw"
@@ -144,7 +142,7 @@ const Project = ({type, title, summary, img, link, github}) => {
                     > Visit Project</Link>
                 </div>
             </div>
-        </article>
+        </motion.article>
     )
 }
 
@@ -161,7 +159,7 @@ const projects = () => {
                 <CategoriesNav />
                 <AnimatedText
                     text="Building Great Projects!"
-                    className='mb-16 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
+                    className='mb-10 lg:!text-7xl sm:mb-8 sm!text-6xl xs:!text-4xl'
                 />
 
                 <div className='w-full flex flex-col items-center justify-between gap-24 gap-y-32'>
@@ -358,8 +356,8 @@ const projects = () => {
                                 title="LlamaLit AI"
                                 img={llamalitImage}
                                 summary="A Fullstack CSV Data Chatbot with 🦙 Llama2, Sentence Transformers, CTransformers, Langchain & Streamlit"
-                                link="https://github.com/alfellati/llamalit-ai"
-                                github="https://github.com/alfellati/llamalit-ai"
+                                link="https://github.com/balqaasem/llamalit-ai"
+                                github="https://github.com/balqaasem/llamalit-ai"
                                 type="Llama AI Chatbot"
                             />
                         </div>
@@ -412,7 +410,7 @@ const projects = () => {
                             img={project1}
                             summary="A Fullstack YouTube Video Summarization Chatbot with Llama2, Haystack, Whisper & Streamlit"
                             link="/"
-                            github="https://github.com/alfellati/yoilit-ai"
+                            github="https://github.com/balqaasem/yoilit-ai"
                             type="Llama AI Chatbot"
                         />
                     </div> */}
@@ -421,8 +419,8 @@ const projects = () => {
                             title="Cesva AI"
                             img={project1}
                             summary="A Fullstack Telegram AI Bot using CSV Doc. Retrieval with FAISS vectorstore"
-                            link="https://github.com/alfellati/cesva-ai"
-                            github="https://github.com/alfellati/cesva-ai"
+                            link="https://github.com/balqaasem/cesva-ai"
+                            github="https://github.com/balqaasem/cesva-ai"
                             type="FAISS AI Chatbot"
                         />
                     </div> */}
