@@ -5,20 +5,16 @@ import rehypeSanitize from 'rehype-sanitize';
 import remarkGfm from 'remark-gfm';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { LinkedInIcon, TelegramIcon, TwitterIcon, CopyIcon, CloseIcon } from './Icons';
+import { CloseIcon } from './Icons';
+import ShareWithArea from './ShareWithArea';
 
 const FramerImage = motion(Image);
 
 const ExpandedPost = ({ post, onClose }) => {
   const link = `https://balqaasem.xyz/blog?slug=${post.slug}`;
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(link);
-    alert('Link copied to clipboard!');
-  };
-
   // Construct the image path based on the slug
-  const imagePath = `/images/posts/${post.slug}.png`;
+  const imagePath = `/images/posts/${post.slug}/1.png`;
 
   return (
     <div className="bg-gray-50 dark:bg-dark p-6 rounded-lg shadow-lg overflow-auto max-h-[80vh]">
@@ -50,47 +46,9 @@ const ExpandedPost = ({ post, onClose }) => {
           />
         </div>
       </div>
-
-      <div className='mt-2 mb-2 flex items-center rounded bg-primary dark:bg-primaryDark'>
-        <p className='text-dark dark:text-light p-2 text-lg font-semibold sm:px-4 sm:text-base'> Share with: </p>
-        <motion.a
-          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`}
-          target={"_blank"}
-          whileHover={{y:-2}}
-          whileTap={{scale:0.9}}
-          className="w-6 mr-3"
-        >
-            <LinkedInIcon />
-        </motion.a>
-        <motion.a
-          href={`https://t.me/share/url?url=${encodeURIComponent(link)}`}
-          target={"_blank"}
-          whileHover={{y:-2}}
-          whileTap={{scale:0.9}}
-          className="w-6 mr-3"
-        >
-            <TelegramIcon />
-        </motion.a>
-        <motion.a
-          href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(link)}&text=${encodeURIComponent(post.title)}`}
-          target={"_blank"}
-          whileHover={{y:-2}}
-          whileTap={{scale:0.9}}
-          className="w-6 mr-3"
-        >
-            <TwitterIcon />
-        </motion.a>
-
-        <motion.button
-          whileHover={{y:-2}}
-          whileTap={{scale:0.9}}
-          className={`w-6 mr-3`}
-          onClick={copyToClipboard}
-        >
-            <CopyIcon />
-        </motion.button>
+      <div className='mb-2'>
+        <ShareWithArea link={link} post={post} />
       </div>
-
       <div className="prose dark:prose-dark max-w-none">
         <ReactMarkdown
           rehypePlugins={[rehypeRaw, rehypeSanitize]}
@@ -114,6 +72,9 @@ const ExpandedPost = ({ post, onClose }) => {
         >
           {post.content}
         </ReactMarkdown>
+      </div>
+      <div className='mb-2'>
+        <ShareWithArea link={link} post={post} />
       </div>
     </div>
   );
