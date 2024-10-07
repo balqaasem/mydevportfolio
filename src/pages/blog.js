@@ -201,7 +201,7 @@ const Blog = ({ posts }) => {
                 .map((post) => (
                   <PostPreview
                     key={post.slug}
-                    {...post}
+                    post={post}
                     onClick={() => handlePostClick(post)}
                   />
                 ))}

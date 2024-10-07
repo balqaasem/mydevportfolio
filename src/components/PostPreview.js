@@ -1,28 +1,27 @@
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { LinkedInIcon, TelegramIcon, TwitterIcon, CopyIcon } from './Icons';
+import ShareWithArea from './ShareWithArea';
 
 const FramerImage = motion(Image);
 
-const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, onClick }) => {
+const PostPreview = ({ post, onClick }) => {
+  // Ensure post is defined
+  if (!post) {
+    return null; // or handle the error as needed
+  }
+
   const router = useRouter();
 
   const handleClick = (e) => {
     e.preventDefault();
     onClick();
-    router.push(`/blog?slug=${slug}`, undefined, { shallow: true });
+    router.push(`/blog?slug=${post.slug}`, undefined, { shallow: true });
   };
 
-  const link = `https://balqaasem.xyz/blog?slug=${slug}`;
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(link);
-    alert('Link copied to clipboard!');
-  };
-
+  const link = `https://balqaasem.xyz/blog?slug=${post.slug}`;
   // Construct the image path based on the slug
-  const imagePath = `/images/posts/${slug}.png`;
+  const imagePath = `/images/posts/${post.slug}/1.png`;
 
   return (
     <motion.article
@@ -40,7 +39,7 @@ const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, onClick
       >
         <FramerImage 
           src={imagePath}
-          alt={title} 
+          alt={post.title} // Changed from `title` to `post.title`
           className='w-full h-auto'
           whileHover={{scale:1.05}}
           whileTap={{scale:0.9}}
@@ -59,60 +58,21 @@ const PostPreview = ({ title, date, subtitle, slug, topic, tags, series, onClick
           whileTap={{scale:0.9}}
           onClick={handleClick}
         >
-          <h2 className='my-2 w-full text-left text-2xl font-bold dark:text-light sm:text-sm'>{title}</h2>
+          <h2 className='my-2 w-full text-left text-2xl font-bold dark:text-light sm:text-sm'>{post.title}</h2>
         </motion.div>
 
-        <p className="text-gray-500 dark:text-gray-400 mb-2">{date}</p>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{subtitle}</p>
+        <p className="text-gray-500 dark:text-gray-400 mb-2">{post.date}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{post.subtitle}</p>
         <div className="flex justify-between">
-          {series && <p className="text-sm font-bold text-blue-500 dark:text-blue-300 mb-2 mr-4">Series: {series}</p>}
-          {topic && <p className="text-sm font-bold text-primaryGreenDark dark:text-purple-300 mb-2 ml-4">Topic: {topic}</p>}
+          {post.series && <p className="text-sm font-bold text-blue-500 dark:text-blue-300 mb-2 mr-4">Series: {post.series}</p>}
+          {post.topic && <p className="text-sm font-bold text-primaryGreenDark dark:text-purple-300 mb-2 ml-4">Topic: {post.topic}</p>}
         </div>
         <div className="flex flex-wrap gap-2">
-          {tags.map(tag => (
+          {post.tags && post.tags.map(tag => (
             <span key={tag} className="tag">{tag}</span>
           ))}
         </div>
-        <div className='mt-2 flex items-center rounded bg-primary dark:bg-primaryDark'>
-          <p className='text-dark dark:text-light p-2 text-lg font-semibold sm:px-4 sm:text-base'> Share with: </p>
-          
-          <motion.a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`}
-            target={"_blank"}
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className="w-6 mr-3"
-          >
-              <LinkedInIcon />
-          </motion.a>
-          <motion.a
-            href={`https://t.me/share/url?url=${encodeURIComponent(link)}`}
-            target={"_blank"}
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className="w-6 mr-3"
-          >
-              <TelegramIcon />
-          </motion.a>
-          <motion.a
-            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(link)}&text=${encodeURIComponent(title)}`}
-            target={"_blank"}
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className="w-6 mr-3"
-          >
-              <TwitterIcon />
-          </motion.a>
-
-          <motion.button
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className={`w-6 mr-3`}
-            onClick={copyToClipboard}
-          >
-              <CopyIcon />
-          </motion.button>
-        </div>
+        <ShareWithArea link={link} post={post} />
       </div>
     </motion.article>
   );
