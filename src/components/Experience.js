@@ -51,31 +51,6 @@ const Experience = () => {
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
-                position="Global Business Development Manager"
-                company="Royale Jewelry Ltd."
-                time="Jun. 2022 - Present"
-                address="Qingdao, Shandong, China"
-                work="
-                We produce a wide range of fashion jewelry accessories in metal alloys, 925 serling silver, zinc alloy and brass. 
-                I engage in sales, strategic planning and marketing, I execute business development plans and lead the International Sales 
-                and Marketing Teams as well as maintaining the Business partnerships with our consulting team and global partners.
-                "
-                />
-                
-                <Details 
-                position="Founder, CEO"
-                company="Velicium Digital"
-                time="May. 2024 - Present"
-                address="Qingdao, Shandong, China"
-                work="
-                Velicium, short for Venilicium which is latin for `Marketing` is as the name implies a marketing firm for the digital age. 
-                We are a digital marketing agency that is rooted with excellence for excellence. In this chaotic world where attention is 
-                the priciest comodity, we get it for you at an affordable rate with a long lasting taste, a far reaching voice and a deep 
-                insight on just the attention you need for your marketing goals to be scored.
-                "
-                />
-                
-                <Details 
                 position="Founder, CEO"
                 company="Open Web3 Foundation"
                 time="Apr. 2021 - Present"

@@ -38,7 +38,7 @@ const Footer = () => {
     >
       <div className='bg-primary dark:bg-primaryDark px-8 py-8 lg:py-2'>
         <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6'>
-          <div classname='footer-left py-8 flex items-center justify-between lg:flex-col lg:py-6'>
+          <div className='footer-left py-8 flex items-center justify-between lg:flex-col lg:py-6'>
             <nav className="flex 2xl:pb-3 xl:pb-3 justify-center footer-logo">
               <Logo />
             </nav>

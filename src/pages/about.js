@@ -11,7 +11,6 @@ import Education from '@/components/Education';
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimatedNumbers = ({value}) => {
 const ref = useRef(null);0
@@ -118,6 +117,15 @@ const CategoriesNav = () => {
 
 
 const about = () => {
+  const startDate = new Date('2008');
+
+  const calculateYearsExperience = () => {
+    const today = new Date();
+    const years = today.getFullYear() - startDate.getFullYear();
+    const monthDifference = today.getMonth() - startDate.getMonth();
+    return monthDifference < 0 || (monthDifference === 0 && today.getDate() < startDate.getDate()) ? years - 1 : years;
+  };
+
   return (
     <>
         <Head>
@@ -138,15 +146,15 @@ const about = () => {
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 text-primaryGreenDark dark:text-primaryDark'>
                             Biography
                         </h2>
-                        <p className='font-medium md:font-normal xl:text-sm'>
-                        Salam, I&apos;m Muhammad-Jibril Bashir Al-Sharif, aka. Khalifa MBA, aka. Al-Fellati Al-Sharif, SDE, TPM, Architect, 
-                        Researcher (altogether a &apos;STAR&apos;) specializing in Web3/Blockchain, AI/ML, Cloud and Full Stack development 
-                        with a passion to create intuitive, scalable and user-centric dgital products for quality experience. 
+                        <p className='font-medium md:font-normal xl:text-sm text-justify'>
+                        Salam, I&apos;m Muhammad-Jibril Bashir Al-Sharif, aka. Khalifa aka. M.B.A., Artist, Engineer, Scientist 
+                        specializing in Web3/Blockchain, AI/ML, Cloud and Full Stack development, with a passion to create intuitive, 
+                        functional, scalable and user-centric products for quality experience. 
                         </p>
 
-                        <p className='mt-3 font-medium md:font-normal xl:text-sm'>
-                        With 14+ years of experience from the very young age of 11, I have spent more than half my age building 
-                        and contributing to the field doing what I love, therefore aquiring over a decade of experience in my field.
+                        <p className='mt-3 font-medium md:font-normal xl:text-sm text-justify'>
+                        With {calculateYearsExperience()} years of experience from the very young age of 11, I have spent more than half my age building 
+                        and contributing to the field doing what I love, therefore acquiring over a decade of experience in my fields.
                         I am always looking for new and innovative ways to bring my vision to life.
                         </p>
                     </div>
@@ -165,18 +173,17 @@ const about = () => {
                             <h1>Khalifa MBA</h1>
                         </div>
                         <div className='flex w-full flex-col items-center justify-center font-bold text-sm text-dark dark:text-dark'>
-                            <h1>Muhammad-Jibril B.A.</h1>
-                            <h1>(Al-Fellati Al-Shareef)</h1>
+                            <h1>Muhammad-Jibril B.Al-Sharif</h1>
+                            <h1>(Khalifa M.B.A.)</h1>
                         </div>
                         <div className='flex w-full flex-col items-center justify-center font-bold text-xs text-dark/75 dark:text-dark/75'>
-                            <p>SDE| TPM| Architect| Researcher</p>
-                            <p>(STAR)</p>
+                            <p>Artist | Engineer | Scientist</p>
                         </div>
                     </div>
                     <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-between pt-6 xl:items-center sm:items-center xs:items-center'>
                             <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={16} />+
+                                <AnimatedNumbers value={calculateYearsExperience()} />
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
@@ -184,16 +191,16 @@ const about = () => {
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
-                                <AnimatedNumbers value={208} /> Days
+                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
+                                <AnimatedNumbers value={208} />
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
                             xl:text-center md:text-lg sm:text-base xs:text-sm sm:text-center xs:text-center'>
-                                Longest Github Streak
+                                Days Github Streak
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-between my-7 pt-6 xl:items-center sm:items-center xs:items-center'>
-                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl  text-primary dark:text-primaryDark'>
+                            <span className='inline-block text-6xl font-bold md:text-5xl lg:text-6xl sm:text-4xl xs:text-3xl text-primary dark:text-primaryDark'>
                                 <AnimatedNumbers value={10000} />+
                             </span>
                             <h2 className='text-l font-bold capitalize text-dark/50 dark:text-light/75 
