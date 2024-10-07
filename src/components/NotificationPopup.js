@@ -5,9 +5,9 @@ import { CloseIcon } from './Icons';
 const NotificationPopup = ({ message, onClose }) => {
   const popupRef = useRef(null);
 
-  if (!message) return null;
-
   useEffect(() => {
+    if (!message) return;
+
     const handleClickOutside = (event) => {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
         onClose();
@@ -18,7 +18,9 @@ const NotificationPopup = ({ message, onClose }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [onClose]);
+  }, [message, onClose]);
+
+  if (!message) return null;
 
   return (
     <motion.div
