@@ -6,12 +6,12 @@ import ShareWithArea from './ShareWithArea';
 const FramerImage = motion(Image);
 
 const PostPreview = ({ post, onClick }) => {
-  // Ensure post is defined
-  if (!post) {
-    return null; // or handle the error as needed
-  }
-
+  
   const router = useRouter();
+
+  if (!post) {
+    return null;
+  }
 
   const handleClick = (e) => {
     e.preventDefault();
