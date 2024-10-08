@@ -2,8 +2,8 @@
 title: "Are stablecoins ready for the masses?"
 subtitle: "Did you know that most cryptocurrencies will almost certainly never be as useful to the masses?"
 date: "2020-11-18"
-topic: "Web3"
-tags: ["Stablecoins", "Crypto", "Finance"]
+topic: "Finance"
+tags: ["Stablecoins", "Crypto", "Web3"]
 series: "Lookup"
 ---
 
