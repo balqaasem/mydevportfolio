@@ -10,7 +10,7 @@ series: "Lookup"
 <p style="text-align: center;">
   <img
     src="/images/posts/gamefi_trends_and_opportunities/1.png"
-    alt="Cryptocurrency vs Mobile money"
+    alt="GameFi Trends and Opportunities"
   />
 </p>
 
@@ -21,7 +21,7 @@ GameFi makes it possible for gamers to earn while having fun in the games they p
 <p style="text-align: center;">
   <img
     src="/images/posts/gamefi_trends_and_opportunities/2.png"
-    alt="Cryptocurrency vs Mobile money"
+    alt="GameFi Trends and Opportunities"
   />
 </p>
 
