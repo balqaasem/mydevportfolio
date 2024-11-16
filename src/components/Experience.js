@@ -52,6 +52,16 @@ const Experience = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
                 position="Founder, CEO"
+                company="Slixon AI"
+                time="Oct. 2024 - Present"
+                address="Weifang, Shandong, China"
+                work="
+                Slixon AI is my answer to work in the AI era..
+                "
+                />
+                
+                <Details 
+                position="Founder, CEO"
                 company="Open Web3 Foundation"
                 time="Apr. 2021 - Present"
                 address="Shenzhen, Guangdong, China"
@@ -73,18 +83,14 @@ const Experience = () => {
                 Leading the design of the Setheum Network, a cutting-edge Web3 zk-powered blockchain.
                 "
                 />
-                
                 <Details 
-                position="Founder, CEO"
-                company="Slixon Technologies"
-                time="Nov. 2019 - Present"
-                address="Weifang, Shandong, China"
-                work="
-                Slixon Tech. Working in AI. Where Web3 Meets AI.
-                "
+                position="Global Sales Manager"
+                company="Green Intelligence"
+                time="Jul. 2022 - Aug. 2024"
+                address="Shenzhen, Guangdong Province, China"
+                work="Selling automated assembly line machinery to top manufacturers across the globe."
                 />
-                
-                <Details 
+                <Details
                 position="Member Board of Directors"
                 company="Obelisk Integrated Services Ltd."
                 time="Apr. 2018 - Present"
