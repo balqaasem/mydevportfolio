@@ -63,15 +63,6 @@ const Footer = () => {
                     <LinkedInIcon />
                 </motion.a>
 
-                <motion.a href="https://twitter.com/balqaasem" target={"_blank"}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3 bg-dark rounded-md border border-light"
-                >
-                    <TwitterIcon />
-                </motion.a>
-
-                
                 <motion.a href="https://t.me/balqaasem" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
