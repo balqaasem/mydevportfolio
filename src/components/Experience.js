@@ -61,7 +61,18 @@ const Experience = () => {
                 />
                 
                 <Details 
-                position="Founder, CEO"
+                position="Founder, Maintainer"
+                company="Setheum Labs"
+                time="Nov. 2019 - Present"
+                address="Qingdao, Shandong, China"
+                work="
+                Setheum Labs is an open source development organisation involved in Web3 and blockchain development. 
+                Leading the design of the Setheum Network, a cutting-edge Web3 zk-powered blockchain.
+                "
+                />
+                
+                <Details 
+                position="Founder"
                 company="Open Web3 Foundation"
                 time="Apr. 2021 - Present"
                 address="Shenzhen, Guangdong, China"
@@ -74,26 +85,17 @@ const Experience = () => {
                 />
                 
                 <Details 
-                position="Founder, CEO"
-                company="Setheum Labs"
-                time="Nov. 2019 - Present"
-                address="Qingdao, Shandong, China"
-                work="
-                Setheum Labs is an open source development organisation involved in Web3 and blockchain development. 
-                Leading the design of the Setheum Network, a cutting-edge Web3 zk-powered blockchain.
-                "
-                />
-                <Details 
-                position="Global Sales Manager"
+                position="International Sales Manager"
                 company="Green Intelligence"
-                time="Jul. 2022 - Aug. 2024"
+                time="Aug 2022 - Oct 2022"
                 address="Shenzhen, Guangdong Province, China"
                 work="Selling automated assembly line machinery to top manufacturers across the globe."
                 />
+                
                 <Details
                 position="Member Board of Directors"
                 company="Obelisk Integrated Services Ltd."
-                time="Apr. 2018 - Present"
+                time="Apr. 2018 - May 2024"
                 address="Abuja, Fderal Capital Territory, Nigeria - Remote"
                 work="Obelisk Integrated Services is a conglomerate that serves in the Real Estate, Transport, Agriculture and the Import & Export Industries."
                 />
