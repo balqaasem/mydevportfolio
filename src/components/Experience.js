@@ -96,7 +96,7 @@ const Experience = () => {
                 position="Member Board of Directors"
                 company="Obelisk Integrated Services Ltd."
                 time="Apr. 2018 - May 2024"
-                address="Abuja, Fderal Capital Territory, Nigeria - Remote"
+                address="Abuja, Fderal Capital Territory, Nigeria"
                 work="Obelisk Integrated Services is a conglomerate that serves in the Real Estate, Transport, Agriculture and the Import & Export Industries."
                 />
                 
