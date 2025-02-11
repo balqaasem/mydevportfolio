@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 const API_KEY = process.env.CONVERTKIT_API_KEY;
 const FORM_ID = process.env.CONVERTKIT_FORM_ID;
 const BASE_URL = 'https://api.convertkit.com/v3';
