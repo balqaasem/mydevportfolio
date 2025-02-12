@@ -10,7 +10,15 @@ const Logo = () => {
         className='w-16 h-16 bg-primary dark:bg-primary text-dark dark:text-dark flex items-center justify-center
         rounded-full text-sm font-bold border border-solid border-primaryGreenDark dark:border-primaryGreenDark'
       >
-      <Image src={khalifaIcon} alt={"Khalifa MBA Icon"} className='w-16 h-16 pb-1 pl-1 pr-1' priority />
+      <Image
+        src='/images/profile/KhalifaIcon.png'
+        alt={"Khalifa MBA Icon"}
+        className='w-full h-full object-contain'
+        width={64}
+        height={64}
+        unoptimized={true}
+        priority
+      />
       </Link>
     </div>
   )
