@@ -202,7 +202,7 @@ const NavBar = () => {
                     <CustomMobileLink href="/blog" title="Blog" className='text-dark dark:text-light' toggle={handleClick} />
                 </nav>
 
-                <nav className="flex items-center justify-center flex-wra mt-2">
+                <nav className="flex items-center justify-center flex-wrap mt-2">
                     <motion.a href="https://www.linkedin.com/in/balqaasem/" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
